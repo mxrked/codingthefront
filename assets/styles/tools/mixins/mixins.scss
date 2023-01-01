@@ -1,0 +1,48 @@
+@mixin padding($t, $b, $l, $r) {
+  padding-top: $t;
+  padding-bottom: $b;
+  padding-left: $l;
+  padding-right: $r;
+}
+
+@mixin margin($t, $b, $l, $r) {
+  margin-top: $t;
+  margin-bottom: $b;
+  margin-left: $l;
+  margin-right: $r;
+}
+
+@mixin quickCenter($pos) {
+  @if $pos == "relative" {
+    margin-left: auto;
+    margin-right: auto;
+  } @else {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin displayElement($d, $jC, $aI) {
+  display: $d;
+  justify-content: $jC;
+  align-items: $aI;
+}
+
+@mixin bGSU($s, $pos) {
+  background-size: $s;
+  background-position: $pos;
+  background-repeat: no-repeat;
+}
+
+@mixin selection() {
+  &::selection {
+    color: #151515;
+    background-color: #ffb200;
+  }
+
+  &::-moz-selection {
+    color: #151515;
+    background-color: #ffb200;
+  }
+}

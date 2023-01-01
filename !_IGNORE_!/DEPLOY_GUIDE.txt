@@ -1,0 +1,109 @@
+
+This txt file is used to note down what files to upload to the github repo for
+it to be deployed on Netlify. 
+
+This is mostly to prevent going over the monthly 300 minutes.
+
+ex:
+DATE
+====
+- FILES_UPLOADED - COMMIT_MESSAGE
+
+THANKSGIVING 2022 🦃
+=====================
+- Created project structure
+
+11/25/2022
+==========
+- assets/components/global/Nav/Mobile/MobileNav - Made some changes
+- assets/components/pages/Index - Created files
+- assets/functions/dom/togglers/ToggleMobileNav - Created file
+- assets/functions/dom/closers/CloseMobileNav - Created file
+- assets/styles/modules/Nav - Made some styling changes
+- assets/styles/modules/Index - Made some styling changes
+- pages/index.js - Added components
+
+11/26/2022
+==========
+- assets/components/global/Misc/PageB2T - Created file
+- assets/components/global/Misc/HeadCnt - Created file
+- assets/components/pages/Index/IndexProjects - Made some changes
+- assets/functions/dom/triggers/TriggerExitAnimations - Created file
+- assets/functions/dom/checkers/CheckB2TStatus - Created file
+- assets/styles/modules/Nav - Made some styling changes
+- assets/styles/modules/Misc - Made some styling changes
+- assets/styles/modules/Index - Made some styling changes
+- pages/app.js - Added getSPs and Data
+- pages/index, projects, info, contact - Added HeadCnt
+
+11/27/2022
+==========
+- assets/components/global/Nav/Both/Resume - Created file
+- assets/components/global/Nav/Both/ResumeToggler - Made some changes
+- assets/functions/dom/manip/ManipElementOpacVis - Created file
+- assets/styles/modules/Nav - Made some styling changes
+- assets/styles/modules/Index - Made some styling changes
+- pages/index, projects, info, contact - Added Resume
+
+11/28/2022
+==========
+- assets/cdns/IMGS - Created file
+- assets/components/pages/Index/IndexInfo - Made some changes
+- assets/styles/modules/Nav - Made some styling changes
+- assets/styles/modules/Index - Made some styling changes
+
+11/29/2022
+==========
+- assets/components/pages/Index/IndexContact - Made some changes
+- assets/styles/modules/Nav - Made some styling changes
+- assets/styles/modules/Index - Made some styling changes
+
+
+11/30/2022
+==========
+- assets/components/global/Footer - Created folder and file
+- assets/functions/dom/triggers/TriggerExitAnimations - Made some changes
+- assets/styles/modules/Nav - Made some styling changes
+- assets/styles/modules/Footer - Made some styling changes
+- assets/styles/modules/Index - Made some styling changes
+- pages/index, projects, info, contact - Added Footer
+
+
+12/1/2022
+=========
+- assets/components/pages/Projects/ProjectsTop - Created files
+- assets/styles/modules/Projects - Made some styling changes
+- pages/projects - Added components and data
+
+
+12/2/2022
+=========
+- assets/components/pages/Projects/ProjectsHolder - Created file
+- assets/components/pages/Contact/ContactTop - Created file
+- assets/styles/modules/Projects - Made some styling changes
+- assets/styles/modules/Contact - Made some styling changes
+- pages/projects - Added components and data
+- pages/contact - Added components and data
+
+
+12/3/2022
+=========
+- assets/components/global/Footer - Added framer motion on scroll adjustments
+- assets/components/pages/Index, Projects, Contact - Added framer motion on scroll adjustments
+- assets/components/pages/Contact/ContactForm - Created file
+- assets/functions/data/email/EmailSend - Created function
+- assets/styles/modules/Contact - Made some styling changes
+
+
+12/5/2022
+=========
+- assets/functions/data/email/CheckValidEmail - Created function
+- assets/functions/data/email/CheckValidPhone - Created function
+- assets/functions/data/email/EmailSend - Made some changes
+- assets/styles/modules/Contact - Made some styling changes
+
+12/6/2022
+=========
+- assets/components/pages/Info - Created files
+- assets/styles/modules/Info - Made some styling changes
+- pages/info - Added components

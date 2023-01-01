@@ -1,0 +1,77 @@
+[
+  {
+    "projectID": "#ID_001",
+    "projectName": "A Fresh Place",
+    "projectDesc": "A ecommerce-based website dedicated to all things foods and produce.",
+    "projectStart": "1/5/2022",
+    "projectEnd": "2/3/2022",
+    "projectCover": "https://raw.githubusercontent.com/mxrked/codingthefront-revamped_CDN/master/projects/afreshplace/afreshplace-cover.webp",
+    "projectTechs": ["Sass", "Bootstrap", "Next.js"],
+    "projectHighlights": [
+      "Develop the site to work with Microsoft Edge, Mozilla Firefox and Google Chrome",
+      "Made with a shopping cart system similar to OnlyJojo's"
+    ],
+    "projectCodeLink": "https://github.com/mxrked/AFreshPlace",
+    "projectDemoLink": "https://effulgent-marshmallow-23dfdf.netlify.app/"
+  },
+  {
+    "projectID": "#ID_002",
+    "projectName": "OnlyJojo",
+    "projectDesc": "A ecommerce-based website dedicated to all things JoJo's Bizarre Adventure.",
+    "projectStart": "3/7/2022",
+    "projectEnd": "4/9/2022",
+    "projectCover": "https://raw.githubusercontent.com/mxrked/codingthefront-revamped_CDN/master/projects/onlyjojo/onlyjojo-cover.webp",
+    "projectTechs": ["Sass", "Bootstrap", "Next.js"],
+    "projectHighlights": [
+      "Made into an ecommerce-type website with a shopping cart system that uses Session and Local Storage",
+      "Applied features that relate to the manga and anime of the same name through the website"
+    ],
+    "projectCodeLink": "https://github.com/mxrked/OnlyJojo",
+    "projectDemoLink": "https://startling-syrniki-d0dc90.netlify.app/"
+  },
+  {
+    "projectID": "#ID_003",
+    "projectName": "SharpQuills",
+    "projectDesc": "A informational-based website dedicated to all things hedgehog.",
+    "projectStart": "12/4/2021",
+    "projectEnd": "1/4/2022",
+    "projectCover": "https://raw.githubusercontent.com/mxrked/codingthefront-revamped_CDN/master/projects/sharpquills/sharpquills-project-cover.webp",
+    "projectTechs": ["Sass", "Bootstrap", "Next.js"],
+    "projectHighlights": [
+      "Created custom modals for displaying images of the different hedgehogs",
+      "Used text and information based on each individual hedgehog type"
+    ],
+    "projectCodeLink": "https://github.com/mxrked/SharpQuill_NEXTJS",
+    "projectDemoLink": "https://astounding-gaufre-f9428d.netlify.app/"
+  },
+  {
+    "projectID": "#ID_004",
+    "projectName": "Flora and Fauna",
+    "projectDesc": "A informational-based website dedicated to all of the native plants in NC.",
+    "projectStart": "9/7/2022",
+    "projectEnd": "9/13/2022",
+    "projectCover": "https://raw.githubusercontent.com/mxrked/codingthefront-revamped_CDN/master/projects/floraandfauna/floraandfauna-project-cover.webp",
+    "projectTechs": ["Sass", "Bootstrap", "Next.js"],
+    "projectHighlights": [
+      "Created as an informational site dedicated to all the native flora and fauna in NC",
+      "Used text and information based on each individual specimen"
+    ],
+    "projectCodeLink": "https://github.com/mxrked/floraandfauna",
+    "projectDemoLink": "https://fantastic-starburst-b0f940.netlify.app/"
+  },
+  {
+    "projectID": "#ID_005",
+    "projectName": "RTSYVisuals",
+    "projectDesc": "A photography website dedicated to the work of Rick Dingwall.",
+    "projectStart": "11/2021",
+    "projectEnd": "01/2022",
+    "projectCover": "https://raw.githubusercontent.com/mxrked/codingthefront-revamped_CDN/master/projects/rtsyvisuals/rtsyvisuals-project-cover.webp",
+    "projectTechs": ["Sass", "Bootstrap", "ReactJS"],
+    "projectHighlights": [
+      "Fixed image issues regarding to images not loading onto the website",
+      "Hosting images/videos onto personal hosting server to provide faster loading times"
+    ],
+    "projectCodeLink": "https://github.com/mxrked/Rick-s-Website",
+    "projectDemoLink": "https://rtsyvisuals.com/home"
+  }
+]

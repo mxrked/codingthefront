@@ -1,0 +1,85 @@
+[
+  {
+    "projectID": "#ID_001",
+    "projectName": "RTSYVisuals",
+    "projectStart": "11/2021",
+    "projectEnd": "01/2022",
+    "projectClient": "Rick Dingwall - Lexington, NC",
+    "projectAchievements": [
+      "Create with HTML5, CSS3, Sass, JavaScript and ReactJS",
+      "Develop the site to work with Microsoft Edge, Mozilla Firefox and Google Chrome",
+      "Fixed image issues regarding to images not loading onto the website",
+      "Hosting images/videos onto personal hosting server to provide faster loading times",
+      "Design a fully responsive layout for the whole website"
+    ],
+    "projectDemoLink": "https://rtsyvisuals.com/home"
+  },
+  {
+    "projectID": "#ID_002",
+    "projectName": "Flora and Fauna",
+    "projectStart": "09/2022",
+    "projectEnd": "09/2022",
+    "projectClient": "Haytham Elkhair - Winston Salem, NC",
+    "projectAchievements": [
+      "Created with HTML5, CSS3, Sass, Bootstrap, JavaScript and Next.js",
+      "Develop the site to work with Microsoft Edge, Mozilla Firefox and Google Chrome",
+      "Created as an informational site dedicated to all the native flora and fauna in NC",
+      "Used text and information based on each individual specimen"
+    ],
+    "projectDemoLink": "https://fantastic-starburst-b0f940.netlify.app/"
+  },
+  {
+    "projectID": "#ID_003",
+    "projectName": "Kernersville for Kids",
+    "projectStart": "05/2020",
+    "projectEnd": "06/2020",
+    "projectClient": "KCK - Kernersville, NC",
+    "projectAchievements": [
+      "Collaborated with teammates, using clear interpersonal communication skills to promptly resolve issues",
+      "Made in WordPress during a college class's project"
+    ],
+    "projectDemoLink": "http://www.kvillecaresforkids.org/"
+  },
+  {
+    "projectID": "#ID_004",
+    "projectName": "A Fresh Place",
+    "projectStart": "1/5/2022",
+    "projectEnd": "2/3/2022",
+    "projectClient": "Personal Project - Winston Salem, NC",
+    "projectAchievements": [
+      "Create with HTML5, CSS3, Sass, JavaScript and ReactJS",
+      "Develop the site to work with Microsoft Edge, Mozilla Firefox and Google Chrome",
+      "Made with a shopping cart system similar to OnlyJojo's"
+    ],
+    "projectDemoLink": "https://effulgent-marshmallow-23dfdf.netlify.app/"
+  },
+  {
+    "projectID": "#ID_005",
+    "projectName": "OnlyJojo",
+    "projectStart": "03/2022",
+    "projectEnd": "04/2022",
+    "projectClient": "Personal Project - Winston Salem, NC",
+    "projectAchievements": [
+      "Create with HTML5, CSS3, Sass, JavaScript and Next.js",
+      "Develop the site to work with Microsoft Edge, Mozilla Firefox and Google Chrome",
+      "Made into an ecommerce-type website with a shopping cart system that uses Session and Local Storage",
+      "Applied features that relate to the manga and anime of the same name through the website"
+    ],
+    "projectDemoLink": "https://startling-syrniki-d0dc90.netlify.app/"
+  },
+  {
+    "projectID": "#ID_006",
+    "projectName": "SharpQuills",
+    "projectStart": "12/2021",
+    "projectEnd": "01/2022",
+    "projectClient": "Personal Project - Winston Salem, NC",
+    "projectAchievements": [
+      "Create with HTML5, CSS3, Sass, JavaScript and ReactJS",
+      "Develop the site to work with Microsoft Edge, Mozilla Firefox and Google Chrome",
+      "Created as an informational site dedicated to hedgehogs",
+      "Created custom modals for displaying images of the different hedgehogs",
+      "Used text and information based on each individual hedgehog type"
+    ],
+    "projectDemoLink": "https://astounding-gaufre-f9428d.netlify.app/"
+  }
+]

@@ -1,0 +1,135 @@
+// Imports
+@import "../../tools/mixins/mixins.scss";
+@import "../../tools/themes/themes.scss";
+@import "../../tools/variables/variable.scss";
+
+// Fonts
+@font-face {
+  font-family: "Montreux Bold";
+  src: url("../../../fonts/Montreux/Bold.ttf");
+}
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../../../fonts/Lato/Regular.ttf");
+}
+
+// Desktop
+.page_b2t {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 20px;
+  bottom: -100px;
+  color: white;
+  font-size: 23px;
+  z-index: 100;
+  cursor: url(https://raw.githubusercontent.com/mxrked/Codingthefront_CDN/main/icons/custom-cursor.png),
+    default;
+  background-color: $CodGray;
+
+  &:hover {
+    background-color: $SelectiveYellow;
+    color: $CodGray;
+  }
+
+  div {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    @include displayElement(flex, center, center);
+    cursor: url(https://raw.githubusercontent.com/mxrked/Codingthefront_CDN/main/icons/custom-cursor.png),
+      default;
+    border: 3px solid $SelectiveYellow;
+
+    .icon {
+      position: relative;
+      top: -1px;
+      cursor: url(https://raw.githubusercontent.com/mxrked/Codingthefront_CDN/main/icons/custom-cursor.png),
+        default;
+    }
+  }
+}
+
+// Responsive
+@media all and (max-width: 1995px) {
+}
+
+@media all and (max-width: 991px) {
+}
+
+@media (min-width: 992px) {
+}
+
+// Desktop Window (Smallest)
+@media all and (max-width: 768px) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+}
+
+// Smaller Devices (Phones)
+@media all and (max-width: 419px) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+}
+
+// Pixel 2 XL
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+}
+
+// Ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+}
+
+// iPad Pro
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+}
+
+// Laptops
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+}

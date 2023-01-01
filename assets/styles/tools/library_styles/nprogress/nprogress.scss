@@ -1,0 +1,155 @@
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+  // background: rgb(16, 16, 22);
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(16, 16, 22, 1) 0%,
+  //   rgba(0, 0, 0, 1) 100%,
+  //   rgba(0, 212, 255, 1) 100%
+  // );
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(19, 14, 14, 1) 94%
+  );
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 700;
+}
+
+#nprogress .bar {
+  display: none;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display: none;
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50% -50%);
+}
+
+#nprogress .spinner-icon {
+  width: 58px;
+  height: 58px;
+  box-sizing: border-box;
+
+  border: solid 9px transparent;
+  border-top-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-radius: 50%;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Responsive
+@media all and (max-width: 1995px) {
+}
+
+@media all and (max-width: 991px) {
+}
+
+@media (min-width: 992px) {
+}
+
+// Desktop Window (Smallest)
+@media all and (max-width: 768px) {
+  #nprogress .spinner {
+    right: 45%;
+    top: 47%;
+  }
+}
+
+// Smaller Devices (Phones)
+@media all and (max-width: 419px) {
+  #nprogress .spinner {
+    right: 42%;
+    top: 45%;
+  }
+}
+
+// Pixel 2 XL
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #nprogress .spinner {
+    right: 47%;
+    top: 42%;
+  }
+}
+
+// Ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  #nprogress .spinner {
+    right: 45%;
+    top: 45%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #nprogress .spinner {
+    right: 50%;
+    top: 43%;
+  }
+}
+
+// iPad Pro
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #nprogress .spinner {
+    right: 48%;
+    top: 47%;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #nprogress .spinner {
+    right: 48%;
+    top: 48%;
+  }
+}
+
+// Laptops
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  #nprogress .spinner {
+    right: 49%;
+    top: 47%;
+  }
+}

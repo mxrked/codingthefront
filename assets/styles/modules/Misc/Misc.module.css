@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Montreux Bold";
+  src: url("../../../fonts/Montreux/Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../../../fonts/Lato/Regular.ttf");
+}
+
+.page_b2t {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 20px;
+  bottom: -100px;
+  color: white;
+  font-size: 23px;
+  z-index: 100;
+  cursor: url(https://raw.githubusercontent.com/mxrked/Codingthefront_CDN/main/icons/custom-cursor.png), default;
+  background-color: #151515;
+}
+
+.page_b2t:hover {
+  background-color: #ffb200;
+  color: #151515;
+}
+
+.page_b2t div {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: url(https://raw.githubusercontent.com/mxrked/Codingthefront_CDN/main/icons/custom-cursor.png), default;
+  border: 3px solid #ffb200;
+}
+
+.page_b2t div .icon {
+  position: relative;
+  top: -1px;
+  cursor: url(https://raw.githubusercontent.com/mxrked/Codingthefront_CDN/main/icons/custom-cursor.png), default;
+}
+
+@media all and (max-width: 768px) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 419px) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .page_b2t {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+}
+/*# sourceMappingURL=Misc.module.css.map */

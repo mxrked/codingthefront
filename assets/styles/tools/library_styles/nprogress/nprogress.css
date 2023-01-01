@@ -1,0 +1,133 @@
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+  background: black;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(94%, #130e0e));
+  background: linear-gradient(90deg, black 0%, #130e0e 94%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 700;
+}
+
+#nprogress .bar {
+  display: none;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display: none;
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+}
+
+#nprogress .spinner-icon {
+  width: 58px;
+  height: 58px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 9px transparent;
+  border-top-color: white;
+  border-left-color: white;
+  border-radius: 50%;
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media all and (max-width: 768px) {
+  #nprogress .spinner {
+    right: 45%;
+    top: 47%;
+  }
+}
+
+@media all and (max-width: 419px) {
+  #nprogress .spinner {
+    right: 42%;
+    top: 45%;
+  }
+}
+
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #nprogress .spinner {
+    right: 47%;
+    top: 42%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  #nprogress .spinner {
+    right: 45%;
+    top: 45%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #nprogress .spinner {
+    right: 50%;
+    top: 43%;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #nprogress .spinner {
+    right: 48%;
+    top: 47%;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #nprogress .spinner {
+    right: 48%;
+    top: 48%;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  #nprogress .spinner {
+    right: 49%;
+    top: 47%;
+  }
+}
+/*# sourceMappingURL=nprogress.css.map */

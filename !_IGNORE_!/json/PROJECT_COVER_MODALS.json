@@ -1,0 +1,27 @@
+[
+  {
+    "modalName": "A Fresh Place",
+    "modalID": "#ID_001_COVER",
+    "modalBG": "https://raw.githubusercontent.com/mxrked/codingthefront-revamped_CDN/master/projects/afreshplace/afreshplace-cover.webp"
+  },
+{
+    "modalName": "OnlyJojo",
+    "modalID": "#ID_002_COVER",
+    "modalBG": "https://raw.githubusercontent.com/mxrked/codingthefront-revamped_CDN/master/projects/onlyjojo/onlyjojo-cover.webp"
+  },
+{
+    "modalName": "SharpQuills",
+    "modalID": "#ID_003_COVER",
+    "modalBG": "https://raw.githubusercontent.com/mxrked/codingthefront-revamped_CDN/master/projects/sharpquills/sharpquills-project-cover.webp"
+  },
+{
+    "modalName": "Flora and Fauna",
+    "modalID": "#ID_004_COVER",
+    "modalBG": "https://raw.githubusercontent.com/mxrked/codingthefront-revamped_CDN/master/projects/floraandfauna/floraandfauna-project-cover.webp"
+  },
+{
+    "modalName": "RTSYVisuals",
+    "modalID": "#ID_005_COVER",
+    "modalBG": "https://raw.githubusercontent.com/mxrked/codingthefront-revamped_CDN/master/projects/rtsyvisuals/rtsyvisuals-project-cover.webp"
+  }
+]
