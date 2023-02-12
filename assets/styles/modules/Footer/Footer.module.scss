@@ -1,0 +1,384 @@
+// Imports
+@import "../../tools/mixins/mixins.scss";
+@import "../../tools/themes/themes.scss";
+@import "../../tools/variables/variable.scss";
+
+// Fonts
+@font-face {
+  font-family: "Be Vietnam Pro Regular";
+  src: url("../../../fonts/BeVietnamPro/BeVietnamPro-Regular.ttf");
+}
+@font-face {
+  font-family: "Be Vietnam Pro Medium";
+  src: url("../../../fonts/BeVietnamPro/BeVietnamPro-Medium.ttf");
+}
+@font-face {
+  font-family: "Be Vietnam Pro Semi Bold";
+  src: url("../../../fonts/BeVietnamPro/BeVietnamPro-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Be Vietnam Pro Bold";
+  src: url("../../../fonts/BeVietnamPro/BeVietnamPro-Bold.ttf");
+}
+@font-face {
+  font-family: "Be Vietnam Pro Extra Bold";
+  src: url("../../../fonts/BeVietnamPro/BeVietnamPro-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Be Vietnam Pro Black";
+  src: url("../../../fonts/BeVietnamPro/BeVietnamPro-Black.ttf");
+}
+
+// Desktop
+.footer {
+  height: 750px;
+  background-color: $MineShaft;
+  padding-top: 30px;
+  @include displayElement(flex, center, center);
+
+  .footer_inner {
+    width: 100%;
+    max-width: 1000px;
+
+    h1 {
+      font-family: "Be Vietnam Pro Extra Bold";
+      color: $Alabaster;
+      font-size: $Logo;
+      opacity: 0.4;
+      cursor: default;
+      @include selection();
+      text-align: center;
+      cursor: default;
+    }
+
+    .jumpers {
+      @include displayElement(flex, space-evenly, center);
+      max-width: 600px;
+      @include quickCenter("relative");
+      font-family: "Be Vietnam Pro Regular";
+      @include padding(70px, 70px, 0, 0);
+      color: $Alabaster;
+      font-size: $Text;
+
+      li {
+        span {
+          cursor: pointer;
+          @include selection();
+
+          &:hover {
+            color: $TickleMePink;
+          }
+        }
+      }
+    }
+
+    .socials {
+      @include displayElement(flex, space-evenly, center);
+      max-width: 300px;
+      @include quickCenter("relative");
+      font-family: "Be Vietnam Pro Regular";
+      @include padding(0px, 0px, 0, 0);
+
+      li {
+        a {
+          color: $Alabaster;
+          font-size: 23px;
+          @include selection();
+
+          &:hover {
+            color: $TickleMePink;
+          }
+        }
+      }
+    }
+
+    .contact {
+      @include padding(60px, 60px, 0, 0);
+      display: grid;
+      text-align: center;
+      font-family: "Be Vietnam Pro Semi Bold";
+
+      span {
+        display: block;
+        margin-bottom: 15px;
+        color: $Alabaster;
+        opacity: 0.7;
+        font-size: 15px;
+        cursor: default;
+        @include selection();
+      }
+    }
+
+    .resume_downloader {
+      @include padding(0, 0, 0, 0);
+      text-align: center;
+
+      span {
+        font-family: "Be Vietnam Pro Semi Bold";
+        font-size: 17px;
+        cursor: pointer;
+        color: $Alabaster;
+        @include selection();
+
+        &:hover {
+          color: $TickleMePink;
+        }
+      }
+    }
+  }
+}
+
+// Responsive
+@media all and (max-width: 1995px) {
+}
+
+@media all and (max-width: 991px) {
+  .footer {
+    height: 600px;
+
+    .footer_inner {
+      h1 {
+        font-size: 30px;
+      }
+
+      .jumpers {
+        max-width: 400px;
+        font-size: 17px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      .socials {
+        li {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .contact {
+        span {
+          font-size: 14px;
+        }
+      }
+
+      .resume_downloader {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+// Desktop Window (Smallest)
+@media all and (max-width: 768px) {
+  .footer {
+    height: 700px;
+
+    .footer_inner {
+      h1 {
+        font-size: 30px;
+      }
+
+      .jumpers {
+        max-width: 350px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        font-size: 17px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+
+        li {
+          margin-bottom: 30px;
+        }
+      }
+
+      .socials {
+        li {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .contact {
+        span {
+          font-size: 14px;
+        }
+      }
+
+      .resume_downloader {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// Smaller Devices (Phones)
+@media all and (max-width: 419px) {
+  .footer {
+    height: 550px;
+
+    .footer_inner {
+      h1 {
+        font-size: 20px;
+      }
+
+      .jumpers {
+        max-width: 250px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        font-size: 14px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+
+        li {
+          margin-bottom: 20px;
+        }
+      }
+
+      .socials {
+        max-width: 200px;
+
+        li {
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .contact {
+        span {
+          font-size: 13px;
+          margin-bottom: 15px;
+        }
+      }
+
+      .resume_downloader {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// Pixel 2 XL
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .footer {
+    height: 500px;
+
+    .footer_inner {
+      h1 {
+        font-size: 28px;
+      }
+
+      .jumpers {
+        max-width: 350px;
+        display: flex;
+        font-size: 16px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+
+        li {
+          margin-bottom: 20px;
+        }
+      }
+
+      .socials {
+        max-width: 200px;
+
+        li {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .contact {
+        span {
+          font-size: 13px;
+          margin-bottom: 15px;
+        }
+      }
+
+      .resume_downloader {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// Ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .footer {
+    height: 500px;
+
+    .footer_inner {
+      h1 {
+        font-size: 28px;
+      }
+
+      .jumpers {
+        max-width: 350px;
+        display: flex;
+        font-size: 16px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+
+        li {
+          margin-bottom: 20px;
+        }
+      }
+
+      .socials {
+        max-width: 200px;
+
+        li {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .contact {
+        span {
+          font-size: 13px;
+          margin-bottom: 15px;
+        }
+      }
+
+      .resume_downloader {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+// iPad Pro
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+// Laptops
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+}

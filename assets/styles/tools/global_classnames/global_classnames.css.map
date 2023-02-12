@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,UAAU,EAAE,cAAc;CAC3B;;AAED,AAAA,YAAY,CAAC;EACX,UAAU,EAAE,gBAAgB;CAC7B",
+    "sources": [
+        "global_classnames.scss"
+    ],
+    "names": [],
+    "file": "global_classnames.css"
+}
