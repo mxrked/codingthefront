@@ -4,7 +4,7 @@
 
 ---
 
-
+My front end web developer portfolio. Created with Next.js, Bootstrap and Sass
 
 ===
 
@@ -12,7 +12,7 @@
 
 ---
 
-Demo: PUT_SITE_URL_HERE
+Demo: https://codingthefront.com
 
 ===
 
@@ -20,12 +20,12 @@ Demo: PUT_SITE_URL_HERE
 
 ---
 
-## Started Developement - 
+## Started Developement - 11/6/2022
 
-## Ended Development -
+## Ended Development - 1/1/2023
 
 ## Status
 
-PUT_NETLIFY_STATUS_CODE_HERE
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d9ba3d23-556e-43e4-9f29-b9481220c31f/deploy-status)](https://app.netlify.com/sites/splendid-zabaione-e59fcc/deploys)
 
 ===
