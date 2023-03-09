@@ -15,6 +15,11 @@ const FAUNAANDFLORA_IMG = CDNImgReturn(
 const ONLYJOJO_IMG = CDNImgReturn("projects", "onlyjojo-display", "webp");
 const RTSYVISUALS_IMG = CDNImgReturn("projects", "rtsyvisuals-display", "webp");
 const SHARPQUILLS_IMG = CDNImgReturn("projects", "sharpquills-display", "webp");
+const ANIMEXSTREAMING_IMG = CDNImgReturn(
+  "projects",
+  "animex-streaming-display",
+  "webp"
+);
 
 export {
   AFRESHPLACE_IMG,
@@ -22,4 +27,5 @@ export {
   ONLYJOJO_IMG,
   RTSYVISUALS_IMG,
   SHARPQUILLS_IMG,
+  ANIMEXSTREAMING_IMG,
 };
