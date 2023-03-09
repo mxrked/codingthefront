@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "overrides.scss"
-    ],
-    "names": [],
-    "file": "overrides.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"overrides.css"}

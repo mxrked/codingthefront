@@ -2,32 +2,26 @@
   font-family: "Be Vietnam Pro Regular";
   src: url("../../../fonts/BeVietnamPro/BeVietnamPro-Regular.ttf");
 }
-
 @font-face {
   font-family: "Be Vietnam Pro Medium";
   src: url("../../../fonts/BeVietnamPro/BeVietnamPro-Medium.ttf");
 }
-
 @font-face {
   font-family: "Be Vietnam Pro Semi Bold";
   src: url("../../../fonts/BeVietnamPro/BeVietnamPro-SemiBold.ttf");
 }
-
 @font-face {
   font-family: "Be Vietnam Pro Bold";
   src: url("../../../fonts/BeVietnamPro/BeVietnamPro-Bold.ttf");
 }
-
 @font-face {
   font-family: "Be Vietnam Pro Extra Bold";
   src: url("../../../fonts/BeVietnamPro/BeVietnamPro-ExtraBold.ttf");
 }
-
 @font-face {
   font-family: "Be Vietnam Pro Black";
   src: url("../../../fonts/BeVietnamPro/BeVietnamPro-Black.ttf");
 }
-
 .backToTop {
   position: fixed;
   bottom: -100%;
@@ -38,25 +32,17 @@
   border-radius: 5px;
   overflow: hidden;
 }
-
 .backToTop button {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #0c0c0c;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(12, 12, 12);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 26px;
   color: #fcfcfc;
 }
-
 .backToTop button:hover {
   background-color: #e5305b;
 }
@@ -70,7 +56,6 @@
     font-size: 18px;
   }
 }
-
 @media all and (max-width: 768px) {
   .backToTop {
     width: 40px;
@@ -80,7 +65,6 @@
     font-size: 18px;
   }
 }
-
 @media all and (max-width: 419px) {
   .backToTop {
     width: 35px;
@@ -91,7 +75,6 @@
     font-size: 15px;
   }
 }
-
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .backToTop {
     width: 40px;
@@ -101,7 +84,6 @@
     font-size: 18px;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .backToTop {
     width: 45px;
@@ -111,7 +93,6 @@
     font-size: 21px;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .backToTop {
     width: 45px;
@@ -122,7 +103,6 @@
     font-size: 21px;
   }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .backToTop {
     width: 55px;
@@ -133,7 +113,6 @@
     font-size: 26px;
   }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .backToTop {
     width: 55px;
@@ -144,7 +123,6 @@
     font-size: 26px;
   }
 }
-
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .backToTop {
     width: 55px;
@@ -154,5 +132,4 @@
   .backToTop button {
     font-size: 26px;
   }
-}
-/*# sourceMappingURL=Misc.module.css.map */
+}/*# sourceMappingURL=Misc.module.css.map */

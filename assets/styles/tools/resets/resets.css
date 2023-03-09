@@ -151,30 +151,25 @@ select {
 }
 
 .fade-up {
-  -webkit-transform: translateY(-60px);
-          transform: translateY(-60px);
+  transform: translateY(-60px);
   opacity: 0;
   visibility: hidden;
 }
 
 .fade-down {
-  -webkit-transform: translateY(60px);
-          transform: translateY(60px);
+  transform: translateY(60px);
   opacity: 0;
   visibility: hidden;
 }
 
 .fade-left {
-  -webkit-transform: translateX(60px);
-          transform: translateX(60px);
+  transform: translateX(60px);
   opacity: 0;
   visibility: hidden;
 }
 
 .fade-right {
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
+  transform: translateX(-60px);
   opacity: 0;
   visibility: hidden;
-}
-/*# sourceMappingURL=resets.css.map */
+}/*# sourceMappingURL=resets.css.map */
