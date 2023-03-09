@@ -6,6 +6,7 @@
 
 import {
   AFRESHPLACE_IMG,
+  ANIMEXSTREAMING_IMG,
   FAUNAANDFLORA_IMG,
   ONLYJOJO_IMG,
   RTSYVISUALS_IMG,
@@ -108,6 +109,14 @@ const SHARPQUILLS_OBJ = new Project(
   "https://astounding-gaufre-f9428d.netlify.app/",
   "https://github.com/mxrked/SharpQuill_NEXTJS"
 );
+const ANIMEXSTREAMING_OBJ = new Project(
+  "P_6",
+  "Animex Streaming",
+  ANIMEXSTREAMING_IMG,
+  "A streaming website for animex.",
+  "https://sparkling-dragon-f3af91.netlify.app/",
+  "https://github.com/mxrked/animex_streaming"
+);
 
 const PROJECTS = [
   AFRESHPLACE_OBJ,
@@ -115,6 +124,7 @@ const PROJECTS = [
   ONLYJOJO_OBJ,
   RTSYVISUALS_OBJ,
   SHARPQUILLS_OBJ,
+  ANIMEXSTREAMING_OBJ,
 ];
 
 export {
@@ -124,4 +134,5 @@ export {
   ONLYJOJO_OBJ,
   RTSYVISUALS_OBJ,
   SHARPQUILLS_OBJ,
+  ANIMEXSTREAMING_OBJ,
 };
