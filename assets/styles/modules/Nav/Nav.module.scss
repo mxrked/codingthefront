@@ -1,0 +1,532 @@
+// Imports
+@import "../../tools/mixins/mixins.scss";
+@import "../../tools/themes/themes.scss";
+@import "../../tools/variables/variable.scss";
+
+// Fonts
+@font-face {
+  font-family: "FG Regular";
+  src: url("../../../fonts/FG_Regular.otf");
+}
+@font-face {
+  font-family: "FG Semibold";
+  src: url("../../../fonts/FG_Semibold.otf");
+}
+@font-face {
+  font-family: "FG Bold";
+  src: url("../../../fonts/FG_Bold.otf");
+}
+
+// Desktop
+.desktop_nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 400;
+
+  .desktop_nav_inner {
+    @include bGSU(cover, center);
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .desktop_nav_inner_box {
+      @include quickCenter("relative");
+      max-width: 1480px;
+
+      .desktop_nav_inner_row {
+        .desktop_nav_inner_side {
+          height: 100px;
+          display: flex;
+          align-items: center;
+        }
+
+        .desktop_nav_L {
+          justify-content: flex-start;
+
+          .desktop_nav_inner_side_cnt {
+            .logo {
+              a {
+                @include displayElement(flex, flex-start, center);
+                text-decoration: none;
+                color: rgb(240, 240, 240);
+
+                .icon {
+                  font-size: 32px;
+                }
+
+                span {
+                  font-size: 28px;
+                  margin-left: 10px;
+                  position: relative;
+                  top: -4px;
+                  font-family: "FG Bold";
+                }
+              }
+            }
+          }
+        }
+        .desktop_nav_R {
+          justify-content: flex-end;
+
+          .desktop_nav_inner_side_cnt {
+            max-width: 380px;
+            width: 100%;
+
+            ul {
+              @include displayElement(flex, space-between, center);
+              font-family: "FG Semibold";
+
+              li {
+                a {
+                  text-decoration: none;
+                  font-size: $Link;
+                  color: rgb(240, 240, 240);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.mobile_nav {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  @include displayElement(none, center, center);
+
+  .mobile_nav_inner {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    @include displayElement(flex, center, center);
+
+    .mobile_nav_inner_cnt {
+      @include displayElement(flex, space-between, center);
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .logo {
+      a {
+        @include displayElement(flex, flex-start, center);
+        text-decoration: none;
+        color: rgb(240, 240, 240);
+
+        .icon {
+          font-size: 32px;
+        }
+
+        span {
+          font-size: 28px;
+          margin-left: 10px;
+          position: relative;
+          top: -4px;
+          font-family: "FG Bold";
+        }
+      }
+    }
+
+    button {
+      width: 40px;
+      height: 40px;
+      background-color: none;
+      display: block;
+      @include quickCenter("relative");
+      margin-right: 0;
+      margin-top: 0px;
+
+      span {
+        height: 4px;
+        width: 31px;
+        background-color: white;
+        display: block;
+        border-radius: 5px;
+
+        &:nth-child(even) {
+          margin-top: 7px;
+          margin-bottom: 7px;
+        }
+      }
+    }
+  }
+}
+.mobile_nav_menu {
+  .darken {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 600;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+  }
+
+  .mobile_nav_menu_main {
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    z-index: 600;
+    transform: translateX(100%);
+    @include displayElement(flex, center, center);
+    text-align: center;
+
+    .mobile_nav_menu_main_cnt {
+      opacity: 0;
+      visibility: hidden;
+
+      button {
+        width: 45px;
+        height: 45px;
+        border: 2px solid $SandyBrown;
+        @include displayElement(flex, center, center);
+        @include quickCenter("relative");
+        margin-bottom: 40px;
+        font-size: 23px;
+
+        &:hover {
+          background-color: $SandyBrown;
+          color: white;
+        }
+      }
+
+      ul {
+        padding: 0;
+        font-family: "FG Semibold";
+        font-size: 32px;
+
+        li {
+          height: 55px;
+
+          a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+              color: $Froly;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive
+@media all and (max-width: 1995px) {
+}
+
+@media all and (max-width: 991px) {
+  .desktop_nav {
+    display: none;
+  }
+  .mobile_nav {
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  .desktop_nav {
+    display: block !important;
+  }
+
+  .mobile_nav,
+  .mobile_nav_menu {
+    display: none !important;
+  }
+}
+
+// Desktop Window (Smallest)
+@media all and (max-width: 768px) {
+  .desktop_nav {
+    display: none;
+  }
+  .mobile_nav {
+    display: block;
+    padding-bottom: 15px;
+
+    .mobile_nav_inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%;
+      width: 100%;
+      padding-top: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .mobile_nav_inner_cnt {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .logo {
+        .icon {
+          display: none;
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      button {
+        margin-top: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  .mobile_nav_menu {
+    .mobile_nav_menu_main {
+      .mobile_nav_menu_main_cnt {
+        button {
+          width: 40px;
+          height: 40px;
+          font-size: 18px;
+        }
+
+        ul {
+          li {
+            height: 45px;
+
+            a {
+              font-size: 23px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Smaller Devices (Phones)
+@media all and (max-width: 419px) {
+  .desktop_nav {
+    display: none;
+  }
+  .mobile_nav {
+    display: block;
+    padding-bottom: 15px;
+
+    .mobile_nav_inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%;
+      width: 100%;
+      padding-top: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .logo {
+        .icon {
+          display: none;
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      button {
+        margin-top: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  .mobile_nav_menu {
+    .mobile_nav_menu_main {
+      .mobile_nav_menu_main_cnt {
+        button {
+          width: 36px;
+          height: 36px;
+          font-size: 16px;
+        }
+
+        ul {
+          li {
+            height: 45px;
+
+            a {
+              font-size: 21px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Pixel 2 XL
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .desktop_nav {
+    display: none;
+  }
+  .mobile_nav {
+    display: block;
+    max-width: 100%;
+
+    .mobile_nav_inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%;
+      width: 100%;
+      padding-top: 0px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-bottom: 0px;
+
+      .mobile_nav_inner_cnt {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      button {
+        margin-top: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  .mobile_nav_menu {
+    .mobile_nav_menu_main {
+      .mobile_nav_menu_main_cnt {
+        button {
+          width: 36px;
+          height: 36px;
+          font-size: 16px;
+        }
+
+        ul {
+          li {
+            height: 35px;
+
+            a {
+              font-size: 21px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .desktop_nav {
+    display: none;
+  }
+  .mobile_nav {
+    display: block;
+    max-width: 100%;
+
+    .mobile_nav_inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%;
+      width: 100%;
+      padding-top: 0px;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      button {
+        margin-top: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  .mobile_nav_menu {
+    .mobile_nav_menu_main {
+      max-width: 500px;
+
+      .mobile_nav_menu_main_cnt {
+        button {
+          width: 41px;
+          height: 41px;
+          font-size: 21px;
+        }
+
+        ul {
+          li {
+            height: 45px;
+
+            a {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .desktop_nav {
+    display: none;
+  }
+  .mobile_nav {
+    display: block;
+    max-width: 100%;
+
+    .mobile_nav_inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%;
+      width: 100%;
+      padding-top: 0px;
+      padding-left: 60px;
+      padding-right: 60px;
+
+      button {
+        margin-top: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+// iPad Pro
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .desktop_nav {
+    display: block;
+  }
+  .mobile_nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .desktop_nav {
+    display: block;
+  }
+  .mobile_nav {
+    display: none;
+  }
+}
+
+// Laptops
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .desktop_nav {
+    display: block;
+  }
+  .mobile_nav {
+    display: none;
+  }
+}
