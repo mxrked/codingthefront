@@ -4,7 +4,7 @@
 
 ---
 
-This is my current developer portfolio
+My front end web developer portfolio. Created with Next.js, Bootstrap and Sass
 
 ===
 
