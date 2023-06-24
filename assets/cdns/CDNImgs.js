@@ -40,6 +40,11 @@ const RTSYVISUALS_IMG = CDNImgReturn(
   "webp"
 );
 const SHARPQUILLS_IMG = CDNImgReturn("projects", "sharpquills-display", "webp");
+const FIBERCOMPANY_IMG = CDNImgReturn(
+  "projects",
+  "fiber-company-display",
+  "webp"
+);
 
 export {
   IMG_LOTTIE_COMPUTER,
@@ -58,4 +63,5 @@ export {
   ONLYJOJO_IMG,
   RTSYVISUALS_IMG,
   SHARPQUILLS_IMG,
+  FIBERCOMPANY_IMG,
 };
