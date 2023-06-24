@@ -83,9 +83,29 @@ export const ProjectsMain = () => {
                           <div className={`${styles.project_inner_side_cnt}`}>
                             <ul className={`${styles.project_links}`}>
                               <li
-                                className={`${styles.project_code}`}
-                                onClick={() => {
-                                  window.open(project._code, "_blank");
+                                className={`${styles.project_code} ${
+                                  project._code === undefined
+                                    ? styles.code_disable
+                                    : ""
+                                }`}
+                                onClick={(e) => {
+                                  if (project._code !== undefined) {
+                                    e.preventDefault(); // Prevent the default link behavior
+
+                                    const url = project._code;
+                                    const newWindow = window.open(
+                                      url,
+                                      "_blank"
+                                    );
+
+                                    if (newWindow) {
+                                      newWindow.focus(); // Ensure the new window is focused
+                                    }
+                                  } else {
+                                    e.preventDefault();
+                                  }
+
+                                  // window.open(project._code, "_blank");
                                 }}
                               >
                                 <span>Code</span>
@@ -94,8 +114,24 @@ export const ProjectsMain = () => {
                               </li>
                               <li
                                 className={`${styles.project_demo}`}
-                                onClick={() => {
-                                  window.open(project._demo, "_blank");
+                                onClick={(e) => {
+                                  if (project._demo !== undefined) {
+                                    e.preventDefault(); // Prevent the default link behavior
+
+                                    const url = project._demo;
+                                    const newWindow = window.open(
+                                      url,
+                                      "_blank"
+                                    );
+
+                                    if (newWindow) {
+                                      newWindow.focus(); // Ensure the new window is focused
+                                    }
+                                  } else {
+                                    e.preventDefault();
+                                  }
+
+                                  // window.open(project._code, "_blank");
                                 }}
                               >
                                 <span>Demo</span>
@@ -104,7 +140,13 @@ export const ProjectsMain = () => {
                               </li>
                             </ul>
 
-                            <ul className={`${styles.project_tools}`}>
+                            <ul
+                              className={`${styles.project_tools} ${
+                                project._tools.length === 0
+                                  ? styles.tools_disable
+                                  : ""
+                              }`}
+                            >
                               {project._tools.map((tool) => (
                                 <li>
                                   <img data-src={tool} className="lazyload" />
