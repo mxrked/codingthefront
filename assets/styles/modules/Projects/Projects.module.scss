@@ -166,7 +166,7 @@
 
                     .project_links {
                       display: flex;
-                      justify-content: space-between;
+                      justify-content: flex-end;
                       align-items: center;
                       max-width: 200px;
                       @include quickCenter("relative");
@@ -178,11 +178,16 @@
                       li {
                         color: $SandyBrown;
                         cursor: pointer;
+                        margin-left: 20px;
 
                         span {
                           color: black;
                           margin-right: 10px;
                         }
+                      }
+
+                      .code_disable {
+                        display: none;
                       }
                     }
 
@@ -203,6 +208,10 @@
                           height: 30px;
                         }
                       }
+                    }
+
+                    .tools_disable {
+                      display: none !important;
                     }
 
                     .project_years {

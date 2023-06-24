@@ -136,7 +136,7 @@
 }
 .projects_main .projects_main_inner .projects_main_inner_box .projects_main_inner_row .project .project_inner .project_inner_box .project_inner_row .project_R .project_inner_side_cnt .project_links {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   max-width: 200px;
   margin-left: auto;
@@ -149,10 +149,14 @@
 .projects_main .projects_main_inner .projects_main_inner_box .projects_main_inner_row .project .project_inner .project_inner_box .project_inner_row .project_R .project_inner_side_cnt .project_links li {
   color: #f08a5d;
   cursor: pointer;
+  margin-left: 20px;
 }
 .projects_main .projects_main_inner .projects_main_inner_box .projects_main_inner_row .project .project_inner .project_inner_box .project_inner_row .project_R .project_inner_side_cnt .project_links li span {
   color: black;
   margin-right: 10px;
+}
+.projects_main .projects_main_inner .projects_main_inner_box .projects_main_inner_row .project .project_inner .project_inner_box .project_inner_row .project_R .project_inner_side_cnt .project_links .code_disable {
+  display: none;
 }
 .projects_main .projects_main_inner .projects_main_inner_box .projects_main_inner_row .project .project_inner .project_inner_box .project_inner_row .project_R .project_inner_side_cnt .project_tools {
   max-width: 100px;
@@ -170,6 +174,9 @@
 .projects_main .projects_main_inner .projects_main_inner_box .projects_main_inner_row .project .project_inner .project_inner_box .project_inner_row .project_R .project_inner_side_cnt .project_tools li img {
   max-width: 30px;
   height: 30px;
+}
+.projects_main .projects_main_inner .projects_main_inner_box .projects_main_inner_row .project .project_inner .project_inner_box .project_inner_row .project_R .project_inner_side_cnt .tools_disable {
+  display: none !important;
 }
 .projects_main .projects_main_inner .projects_main_inner_box .projects_main_inner_row .project .project_inner .project_inner_box .project_inner_row .project_R .project_inner_side_cnt .project_years {
   text-align: right;
