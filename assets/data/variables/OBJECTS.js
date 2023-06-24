@@ -7,6 +7,7 @@ import {
   ANIMEX_STREAMING_IMG,
   A_FRESH_PLACE_IMG,
   FAUNAANDFLORA_IMG,
+  FIBERCOMPANY_IMG,
   FILEZOID_IMG,
   ONLYJOJO_IMG,
   RTSYVISUALS_IMG,
@@ -26,9 +27,21 @@ const RTSYVISUALS_OBJ = new Project(
   "https://github.com/mxrked/rtsyvisuals",
   "https://rtsyvisuals.com/"
 );
-const ANIMEX_OBJ = new Project(
+const FIBERCOMPANY_OBJ = new Project(
   "P_2",
   "project_2",
+  "FiberCompany",
+  "Website for FiberCompany, NC.",
+  "Winston-Salem, NC",
+  "2023 - 2023",
+  FIBERCOMPANY_IMG,
+  [],
+  undefined,
+  "https://fibercompanync.com"
+);
+const ANIMEX_OBJ = new Project(
+  "P_3",
+  "project_3",
   "Animex",
   "An anime-based streaming site.",
   "Personal Project",
@@ -39,8 +52,8 @@ const ANIMEX_OBJ = new Project(
   "https://sparkling-dragon-f3af91.netlify.app/"
 );
 const ONLYJOJO_OBJ = new Project(
-  "P_3",
-  "project_3",
+  "P_4",
+  "project_4",
   "OnlyJojo",
   "A JJBA-based ecommerce site.",
   "Personal Project",
@@ -51,8 +64,8 @@ const ONLYJOJO_OBJ = new Project(
   "https://startling-syrniki-d0dc90.netlify.app/"
 );
 const SHARPQUILLS_OBJ = new Project(
-  "P_4",
-  "project_4",
+  "P_5",
+  "project_5",
   "SharpQuills",
   "A hedgehog-based informational site.",
   "Personal Project",
@@ -63,8 +76,8 @@ const SHARPQUILLS_OBJ = new Project(
   "https://astounding-gaufre-f9428d.netlify.app/"
 );
 const AFRESHPLACE_OBJ = new Project(
-  "P_5",
-  "project_5",
+  "P_6",
+  "project_6",
   "A Fresh Place",
   "A food-based ecommerce site.",
   "Personal Project",
@@ -75,8 +88,8 @@ const AFRESHPLACE_OBJ = new Project(
   "https://startling-syrniki-d0dc90.netlify.app/"
 );
 const FAUNAANDFLORA_OBJ = new Project(
-  "P_6",
-  "project_6",
+  "P_7",
+  "project_7",
   "Fauna and Flora",
   "A plant-based informational site.",
   "Haytham Elkhair, NC",
@@ -87,8 +100,8 @@ const FAUNAANDFLORA_OBJ = new Project(
   "https://fantastic-starburst-b0f940.netlify.app/"
 );
 const ACCOUNTGUARD_OBJ = new Project(
-  "P_7",
-  "project_7",
+  "P_8",
+  "project_8",
   "AccountGuard",
   "A account manager PyQt5 app.",
   "Personal Project",
@@ -99,8 +112,8 @@ const ACCOUNTGUARD_OBJ = new Project(
   undefined
 );
 const FILEZOID_OBJ = new Project(
-  "P_8",
-  "project_8",
+  "P_9",
+  "project_9",
   "Filezoid",
   "A file creator PyQt5 app.",
   "Personal Project",
@@ -120,4 +133,5 @@ export {
   FAUNAANDFLORA_OBJ,
   ACCOUNTGUARD_OBJ,
   FILEZOID_OBJ,
+  FIBERCOMPANY_OBJ,
 };
