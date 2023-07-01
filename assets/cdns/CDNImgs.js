@@ -22,6 +22,11 @@ const FAUNAANDFLORA_IMG = CDNImgReturn(
   "faunaandflora-display",
   "webp"
 );
+const MEDICAL_OFFICE_ADMINISTRATION_IMG = CDNImgReturn(
+  "projects",
+  "medical-office-administration",
+  "webp"
+);
 const FILEZOID_IMG = CDNImgReturn("projects", "filezoid", "webp");
 const ONLYJOJO_IMG = CDNImgReturn("projects", "onlyjojo-display", "webp");
 const RTSYVISUALS_IMG = CDNImgReturn(
@@ -46,6 +51,7 @@ export {
   FILEZOID_IMG,
   ONLYJOJO_IMG,
   RTSYVISUALS_IMG,
+  MEDICAL_OFFICE_ADMINISTRATION_IMG,
   SHARPQUILLS_IMG,
   FIBERCOMPANY_IMG,
 };
