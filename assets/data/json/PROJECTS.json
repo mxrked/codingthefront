@@ -1,0 +1,151 @@
+[
+  {
+    "projectID": "P_01",
+    "projectName": "RTSYVisuals",
+    "projectImg": "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/imgs/projects/rtsyvisuals-display-new.webp",
+    "projectClient": "Client: Rick Dingwall",
+    "projectPrice": "750.00",
+    "projectDesc": "A photography website for Rick Dingwall's business.",
+    "projectTechs": [
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/react.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/nextjs.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/sass.webp"
+    ],
+    "projectDemo": "https://rtsyvisuals.com/",
+    "projectCode": "https://github.com/mxrked/rtsyvisuals"
+  },
+  {
+    "projectID": "P_02",
+    "projectName": "Fiber Company",
+    "projectImg": "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/imgs/projects/fiber-company-display.webp",
+    "projectClient": "Client: Fiber Company",
+    "projectPrice": "200.00",
+    "projectDesc": "A arts/crafts website dedicated to the Fiber Company.",
+    "projectTechs": [
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/wix.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/editor-x.webp"
+    ],
+    "projectDemo": "https://www.fibercompanync.com/",
+    "projectCode": "undefined"
+  },
+  {
+    "projectID": "P_03",
+    "projectName": "Animex Streaming",
+    "projectImg": "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/imgs/projects/animex-streaming-display.webp",
+    "projectClient": "Client: None",
+    "projectPrice": "Unpaid",
+    "projectDesc": "A anime-based streaming website.",
+    "projectTechs": [
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/react.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/nextjs.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/sass.webp"
+    ],
+    "projectDemo": "https://sparkling-dragon-f3af91.netlify.app/",
+    "projectCode": "https://github.com/mxrked/animex_streaming"
+  },
+  {
+    "projectID": "P_04",
+    "projectName": "A Fresh Place",
+    "projectImg": "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/imgs/projects/afreshplace-display.webp",
+    "projectClient": "Client: None",
+    "projectPrice": "Unpaid",
+    "projectDesc": "A ecommerce-based food and produce website.",
+    "projectTechs": [
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/react.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/nextjs.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/sass.webp"
+    ],
+    "projectDemo": "https://effulgent-marshmallow-23dfdf.netlify.app/",
+    "projectCode": "https://github.com/mxrked/AFreshPlace"
+  },
+  {
+    "projectID": "P_05",
+    "projectName": "OnlyJojo",
+    "projectImg": "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/imgs/projects/onlyjojo-display.webp",
+    "projectClient": "Client: None",
+    "projectPrice": "Unpaid",
+    "projectDesc": "A ecommerce-based JoJo's Bizarre Adventure website.",
+    "projectTechs": [
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/react.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/nextjs.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/sass.webp"
+    ],
+    "projectDemo": "https://startling-syrniki-d0dc90.netlify.app/",
+    "projectCode": "https://github.com/mxrked/OnlyJojo"
+  },
+  {
+    "projectID": "P_06",
+    "projectName": "Sharp Quills",
+    "projectImg": "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/imgs/projects/sharpquills-display.webp",
+    "projectClient": "Client: None",
+    "projectPrice": "Unpaid",
+    "projectDesc": "A informational-based hedgehog website.",
+    "projectTechs": [
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/react.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/nextjs.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/sass.webp"
+    ],
+    "projectDemo": "https://astounding-gaufre-f9428d.netlify.app/",
+    "projectCode": "https://github.com/mxrked/SharpQuill_NEXTJS"
+  },
+  {
+    "projectID": "P_07",
+    "projectName": "Flora and Fuana",
+    "projectImg": "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/imgs/projects/fuanaandflora-display.webp",
+    "projectClient": "Client: Haytham Elkhair",
+    "projectPrice": "Unpaid",
+    "projectDesc": "A informational-based flora and fuana website.",
+    "projectTechs": [
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/react.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/nextjs.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/sass.webp"
+    ],
+    "projectDemo": "https://fantastic-starburst-b0f940.netlify.app/",
+    "projectCode": "https://github.com/mxrked/floraandfauna"
+  },
+  {
+    "projectID": "P_08",
+    "projectName": "Medical Office Administration",
+    "projectImg": "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/imgs/projects/medical-office-administration.webp",
+    "projectClient": "Client: Capstone Project",
+    "projectPrice": "Unpaid",
+    "projectDesc": "A PyQt5 GUI program for a Medical Office Administration team.",
+    "projectTechs": [
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/python.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/pyqt.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/sqlalchemy.webp"
+    ],
+    "projectDemo": "undefined",
+    "projectCode": "https://github.com/mxrked/Medical-Office-Administration"
+  },
+  {
+    "projectID": "P_09",
+    "projectName": "AccountGuard",
+    "projectImg": "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/imgs/projects/account-guard.webp",
+    "projectClient": "Client: None",
+    "projectPrice": "Unpaid",
+    "projectDesc": "A PyQt5 GUI program for storing and managing account information.",
+    "projectTechs": [
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/python.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/pyqt.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/sql.webp"
+    ],
+    "projectDemo": "undefined",
+    "projectCode": "https://github.com/mxrked/AccountGuard_PyQt5"
+  },
+  {
+    "projectID": "P_10",
+    "projectName": "Filezoid",
+    "projectImg": "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/imgs/projects/filezoid.webp",
+    "projectClient": "Client: None",
+    "projectPrice": "Unpaid",
+    "projectDesc": "A PyQt5 GUI program for creating different types of files.",
+    "projectTechs": [
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/python.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/pyqt.webp",
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/programming-languages/sql.webp"
+    ],
+    "projectDemo": "undefined",
+    "projectCode": "https://github.com/mxrked/Filezoid"
+  }
+]

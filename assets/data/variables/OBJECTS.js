@@ -39,11 +39,11 @@ const RTSYVISUALS_OBJ = new Project(
 );
 const FIBERCOMPANY_OBJ = new Project(
   "P_02",
-  "FiberCompany",
+  "Fiber Company",
   FIBERCOMPANY_IMG,
-  "Client: FiberCompany",
+  "Client: Fiber Company",
   200.0,
-  "A arts/crafts website dedicated to the FiberCompany.",
+  "A arts/crafts website dedicated to the Fiber Company.",
   [WIX, EDITOR_X],
   "https://www.fibercompanync.com/",
   undefined
