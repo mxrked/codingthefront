@@ -19,7 +19,7 @@ import { useEffect, useState } from "react";
 export async function getStaticPaths() {
   try {
     const ALL_PROJECTS = await fetch(
-      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/main/files/json/PROJECTS.json"
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/files/json/PROJECTS.json"
     );
 
     if (!ALL_PROJECTS.ok) {
@@ -53,7 +53,7 @@ export async function getStaticProps(context) {
   // Getting the link for the JSON
   try {
     const ALL_PROJECTS = await fetch(
-      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/main/files/json/PROJECTS.json"
+      "https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/files/json/PROJECTS.json"
     );
 
     if (!ALL_PROJECTS.ok) {
@@ -94,7 +94,33 @@ export default function Project({ PROJECT }) {
 
   return (
     <div id="PAGE" className="page overrides_Project full-second">
-      <main id="PAGE_CNT"></main>
+      <main id="PAGE_CNT">
+        <h1>{PROJECT.projectID}</h1>
+        <h1>{PROJECT.projectName}</h1>
+        <img data-src={PROJECT.projectImg} className="lazyload" />
+        <h1>{PROJECT.projectClient}</h1>
+        <h1>{PROJECT.projectPrice}</h1>
+        <h1>{PROJECT.projectDesc}</h1>
+
+        {PROJECT.projectTechs.map((tech) => (
+          <img data-src={tech} className="lazyload" />
+        ))}
+
+        <br />
+        <br />
+        <br />
+
+        {PROJECT.projectDemo !== "undefined" && (
+          <iframe src={PROJECT.projectDemo} width="1700" height="1700" />
+        )}
+
+        <br />
+        <br />
+        <br />
+
+        {PROJECT.projectDemo !== "undefined" && <h1>{PROJECT.projectDemo}</h1>}
+        <h1>{PROJECT.projectCode}</h1>
+      </main>
     </div>
   );
 }
