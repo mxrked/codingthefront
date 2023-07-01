@@ -11,6 +11,7 @@ import {
   REACT,
   WIX,
   EDITOR_X,
+  SQLALCHEMY,
 } from "../../cdns/CDNIcons";
 import {
   ACCOUNT_GUARD_IMG,
@@ -18,6 +19,7 @@ import {
   A_FRESH_PLACE_IMG,
   FAUNAANDFLORA_IMG,
   FILEZOID_IMG,
+  MEDICAL_OFFICE_ADMINISTRATION_IMG,
   ONLYJOJO_IMG,
   RTSYVISUALS_IMG,
   SHARPQUILLS_IMG,
@@ -79,3 +81,71 @@ const ONLYJOJO_OBJ = new Project(
   "https://startling-syrniki-d0dc90.netlify.app/",
   "https://github.com/mxrked/OnlyJojo"
 );
+const SHARPQUILLS_OBJ = new Project(
+  "P_06",
+  "Sharp Quills",
+  SHARPQUILLS_IMG,
+  "Client: None",
+  "Unpaid",
+  "A informational-based hedgehog website.",
+  [REACT, NEXTJS, SASS],
+  "https://astounding-gaufre-f9428d.netlify.app/",
+  "https://github.com/mxrked/SharpQuill_NEXTJS"
+);
+const FLORA_AND_FUANA_OBJ = new Project(
+  "P_07",
+  "Flora and Fuana",
+  FAUNAANDFLORA_IMG,
+  "Client: Haytham Elkhair",
+  "Unpaid",
+  "A informational-based flora and fuana website.",
+  [REACT, NEXTJS, SASS],
+  "https://fantastic-starburst-b0f940.netlify.app/",
+  "https://github.com/mxrked/floraandfauna"
+);
+const MEDICAL_OFFICE_ADMINISTRATION_OBJ = new Project(
+  "P_08",
+  "Medical Office Administration",
+  MEDICAL_OFFICE_ADMINISTRATION_IMG,
+  "Client: Capstone Project",
+  "Unpaid",
+  "A PyQt5 GUI program for a Medical Office Administration team.",
+  [PYTHON, PYQT, SQLALCHEMY],
+  undefined,
+  "https://github.com/mxrked/Medical-Office-Administration"
+);
+const ACCOUNT_GUARD_OBJ = new Project(
+  "P_09",
+  "AccountGuard",
+  ACCOUNT_GUARD_IMG,
+  "Client: None",
+  "Unpaid",
+  "A PyQt5 GUI program for storing and managing account information.",
+  [PYTHON, PYQT, SQL],
+  undefined,
+  "https://github.com/mxrked/AccountGuard_PyQt5"
+);
+const FILEZOID_OBJ = new Project(
+  "P_10",
+  "Filezoid",
+  FILEZOID_IMG,
+  "Client: None",
+  "Unpaid",
+  "A PyQt5 GUI program for creating different types of files.",
+  [PYTHON, PYQT, SQL],
+  undefined,
+  "https://github.com/mxrked/Filezoid"
+);
+
+export {
+  RTSYVISUALS_OBJ,
+  FIBERCOMPANY_OBJ,
+  ANIMEX_STREAMING_OBJ,
+  AFRESHPLACE_OBJ,
+  ONLYJOJO_OBJ,
+  SHARPQUILLS_OBJ,
+  FLORA_AND_FUANA_OBJ,
+  MEDICAL_OFFICE_ADMINISTRATION_OBJ,
+  ACCOUNT_GUARD_OBJ,
+  FILEZOID_OBJ,
+};
