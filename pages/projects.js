@@ -14,5 +14,9 @@ import "../assets/styles/modules/Projects/Projects.module.css";
 export default function Projects() {
   const router = useRouter();
 
-  return "";
+  return (
+    <div id="PAGE" className="page overrides_Projects full-second">
+      <main id="PAGE_CNT"></main>
+    </div>
+  );
 }

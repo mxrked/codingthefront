@@ -14,5 +14,9 @@ import "../assets/styles/modules/Info/Info.module.css";
 export default function Info() {
   const router = useRouter();
 
-  return "";
+  return (
+    <div id="PAGE" className="page overrides_Info full-second">
+      <main id="PAGE_CNT"></main>
+    </div>
+  );
 }
