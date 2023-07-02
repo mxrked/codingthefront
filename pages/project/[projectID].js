@@ -7,6 +7,7 @@
 // React/Next Imports
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 // Library Imports
 
@@ -95,6 +96,43 @@ export default function Project({ PROJECT }) {
 
   return (
     <div id="PAGE" className="page overrides_Project full-second">
+      <Head id="pageHead">
+        <title>codingthefront - {PROJECT.projectName}</title>
+
+        <meta
+          property="og:title"
+          content={`codingthefront - ${PROJECT.projectName}`}
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_GB" />
+        <meta
+          name="google-site-verification"
+          content="V5Rtva_ZUQGbD75j-mxlBzvediiQnPt2hEi7YaPPAEE"
+        />
+
+        <link
+          rel="shortcut icon"
+          href="https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/tab-icons-2023/favicon.ico"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/tab-icons-2023/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/tab-icons-2023/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/tab-icons-2023/favicon-16x16.png"
+        />
+      </Head>
+
       <main id="PAGE_CNT">
         <h1>{PROJECT.projectID}</h1>
         <h1>{PROJECT.projectName}</h1>
