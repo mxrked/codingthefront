@@ -5,8 +5,6 @@ import { useRouter } from "next/router";
 // Library Imports
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { AnimatePresence } from "framer-motion";
-
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
