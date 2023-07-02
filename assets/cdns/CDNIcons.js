@@ -6,10 +6,10 @@
 
 import { CDNIconReturn } from "./CDNReturns";
 
-const FAVICON = CDNIconReturn("tab-icons", "favicon", "ico");
-const FAVICON_32 = CDNIconReturn("tab-icons", "favicon-32x32", "png");
-const FAVICON_16 = CDNIconReturn("tab-icons", "favicon-16x16", "png");
-const ATI = CDNIconReturn("tab-icons", "apple-touch-icon", "png");
+const FAVICON = CDNIconReturn("tab-icons-2023", "favicon", "ico");
+const FAVICON_32 = CDNIconReturn("tab-icons-2023", "favicon-32x32", "png");
+const FAVICON_16 = CDNIconReturn("tab-icons-2023", "favicon-16x16", "png");
+const ATI = CDNIconReturn("tab-icons-2023", "apple-touch-icon", "png");
 
 const PYQT = CDNIconReturn("programming-languages", "pyqt", "webp");
 const PYTHON = CDNIconReturn("programming-languages", "python", "webp");
