@@ -3,8 +3,29 @@
 @import "../../tools/themes/themes.scss";
 @import "../../tools/variables/variable.scss";
 
-// Desktop 
+// Fonts
+@font-face {
+  font-family: "Poppins Black";
+  src: url("../../../fonts/Poppins-Black.ttf");
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("../../../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins Semi Bold";
+  src: url("../../../fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Poppins Medium";
+  src: url("../../../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("../../../fonts/Poppins-Regular.ttf");
+}
 
+// Desktop
 
 // Responsive
 @media all and (max-width: 1995px) {
