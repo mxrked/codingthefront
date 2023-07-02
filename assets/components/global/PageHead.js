@@ -130,24 +130,24 @@ export const PageHead = () => {
 
       <link
         rel="shortcut icon"
-        href="https://raw.githubusercontent.com/mxrked/rtsyvisuals_cdn/main/icons/tab-icons/favicon.ico"
+        href="https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/tab-icons-2023/favicon.ico"
       />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="https://raw.githubusercontent.com/mxrked/rtsyvisuals_cdn/main/icons/tab-icons/apple-touch-icon.png"
+        href="https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/tab-icons-2023/apple-touch-icon.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="https://raw.githubusercontent.com/mxrked/rtsyvisuals_cdn/main/icons/tab-icons/favicon-32x32.png"
+        href="https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/tab-icons-2023/favicon-32x32.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="https://raw.githubusercontent.com/mxrked/rtsyvisuals_cdn/main/icons/tab-icons/favicon-16x16.png"
+        href="https://raw.githubusercontent.com/mxrked/codingthefront_2023_CDN/master/icons/tab-icons-2023/favicon-16x16.png"
       />
     </Head>
   );
