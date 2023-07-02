@@ -1,0 +1,13 @@
+.full-second {
+  transition: 1s ease-in-out !important;
+}
+
+.half-second {
+  transition: 0.5s ease-in-out !important;
+}
+
+.stay-put {
+  // transform: translateX(0) !important;
+  transition: 0s ease-in-out !important;
+  opacity: 1 !important;
+}
