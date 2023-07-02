@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 // Data/Functions/Images Imports
 
 // Component Imports
+import { PageHead } from "@/assets/components/global/PageHead";
 
 // Style Imports
 import "../assets/styles/modules/404/404.module.css";
@@ -16,6 +17,8 @@ export default function NotFound() {
 
   return (
     <div id="PAGE" className="page overrides_404 full-second">
+      <PageHead />
+
       <main id="PAGE_CNT"></main>
     </div>
   );
