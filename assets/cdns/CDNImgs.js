@@ -34,6 +34,11 @@ const FAUNAANDFLORA_IMG = CDNImgReturn(
 );
 const FILEZOID_IMG = CDNImgReturn("projects", "filezoid", "webp");
 const ONLYJOJO_IMG = CDNImgReturn("projects", "onlyjojo-display", "webp");
+const RADIANCE_GLOW_IMG = CDNImgReturn(
+  "projects",
+  "radiance-glow-hsc-display",
+  "webp"
+);
 const RTSYVISUALS_IMG = CDNImgReturn(
   "projects",
   "rtsyvisuals-display-new",
@@ -64,4 +69,5 @@ export {
   RTSYVISUALS_IMG,
   SHARPQUILLS_IMG,
   FIBERCOMPANY_IMG,
+  RADIANCE_GLOW_IMG,
 };
