@@ -27,6 +27,16 @@ const ANIMEX_STREAMING_IMG = CDNImgReturn(
   "animex-streaming-display",
   "webp"
 );
+const ANIMAL_ARK_OF_SUMMERLIN_IMG = CDNImgReturn(
+  "projects",
+  "animalarkofsummerlin-display",
+  "webp"
+);
+const DISTINCT_PAINTING_LLC_IMG = CDNImgReturn(
+  "projects",
+  "distinctpaintingllc-display",
+  "webp"
+);
 const FAUNAANDFLORA_IMG = CDNImgReturn(
   "projects",
   "faunaandflora-display",
@@ -70,4 +80,6 @@ export {
   SHARPQUILLS_IMG,
   FIBERCOMPANY_IMG,
   RADIANCE_GLOW_IMG,
+  ANIMAL_ARK_OF_SUMMERLIN_IMG,
+  DISTINCT_PAINTING_LLC_IMG,
 };
