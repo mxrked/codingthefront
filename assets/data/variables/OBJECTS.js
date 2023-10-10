@@ -15,6 +15,7 @@ import {
   DISTINCT_PAINTING_LLC_IMG,
   RADIANCE_GLOW_IMG,
   ANIMAL_ARK_OF_SUMMERLIN_IMG,
+  ELTYS_PREMIUM_PAINTING_IMG,
 } from "../../cdns/CDNImgs";
 import { PYQT, PYTHON, SQL, SASS, NEXTJS, REACT } from "../../cdns/CDNIcons";
 
@@ -66,9 +67,21 @@ const DISTINCT_PAINTING_LLC_OBJ = new Project(
   "https://github.com/mxrked/distinctpaintingllc",
   "https://distinctpaintingllc.com/"
 );
-const FIBERCOMPANY_OBJ = new Project(
+const ELTYS_PREMIUM_PAINTING_OBJ = new Project(
   "P_5",
   "project_5",
+  "Elty's Prem. Painting",
+  "Website for Elty's Premium Painting, NC.",
+  "Freelance Consultant",
+  "2023 - 2023",
+  ELTYS_PREMIUM_PAINTING_IMG,
+  [SASS, NEXTJS, REACT],
+  "https://github.com/mxrked/eltyspremiumpainting",
+  "https://eltyspremiumpainting.com/"
+);
+const FIBERCOMPANY_OBJ = new Project(
+  "P_6",
+  "project_6",
   "FiberCompany",
   "Website for FiberCompany, NC.",
   "Freelance Consultant",
@@ -79,8 +92,8 @@ const FIBERCOMPANY_OBJ = new Project(
   "https://fibercompanync.com"
 );
 const ANIMEX_OBJ = new Project(
-  "P_6",
-  "project_6",
+  "P_7",
+  "project_7",
   "Animex",
   "An anime-based streaming site.",
   "Personal Project",
@@ -91,8 +104,8 @@ const ANIMEX_OBJ = new Project(
   "https://sparkling-dragon-f3af91.netlify.app/"
 );
 const ONLYJOJO_OBJ = new Project(
-  "P_7",
-  "project_7",
+  "P_8",
+  "project_8",
   "OnlyJojo",
   "A JJBA-based ecommerce site.",
   "Personal Project",
@@ -103,8 +116,8 @@ const ONLYJOJO_OBJ = new Project(
   "https://startling-syrniki-d0dc90.netlify.app/"
 );
 const SHARPQUILLS_OBJ = new Project(
-  "P_8",
-  "project_8",
+  "P_9",
+  "project_9",
   "SharpQuills",
   "A hedgehog-based informational site.",
   "Personal Project",
@@ -115,8 +128,8 @@ const SHARPQUILLS_OBJ = new Project(
   "https://astounding-gaufre-f9428d.netlify.app/"
 );
 const AFRESHPLACE_OBJ = new Project(
-  "P_9",
-  "project_9",
+  "P_10",
+  "project_10",
   "A Fresh Place",
   "A food-based ecommerce site.",
   "Personal Project",
@@ -127,8 +140,8 @@ const AFRESHPLACE_OBJ = new Project(
   "https://startling-syrniki-d0dc90.netlify.app/"
 );
 const FAUNAANDFLORA_OBJ = new Project(
-  "P_10",
-  "project_10",
+  "P_11",
+  "project_11",
   "Fauna and Flora",
   "A plant-based informational site.",
   "Personal Project",
@@ -139,8 +152,8 @@ const FAUNAANDFLORA_OBJ = new Project(
   "https://fantastic-starburst-b0f940.netlify.app/"
 );
 const ACCOUNTGUARD_OBJ = new Project(
-  "P_11",
-  "project_11",
+  "P_12",
+  "project_12",
   "AccountGuard",
   "A account manager PyQt5 app.",
   "Personal Project",
@@ -151,8 +164,8 @@ const ACCOUNTGUARD_OBJ = new Project(
   undefined
 );
 const FILEZOID_OBJ = new Project(
-  "P_12",
-  "project_12",
+  "P_13",
+  "project_13",
   "Filezoid",
   "A file creator PyQt5 app.",
   "Personal Project",
@@ -176,4 +189,5 @@ export {
   RADIANCE_GLOW_OBJ,
   ANIMAL_ARK_OF_SUMMERLIN_OBJ,
   DISTINCT_PAINTING_LLC_OBJ,
+  ELTYS_PREMIUM_PAINTING_OBJ,
 };
