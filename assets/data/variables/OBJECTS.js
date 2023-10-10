@@ -76,7 +76,7 @@ const ELTYS_PREMIUM_PAINTING_OBJ = new Project(
   "2023 - 2023",
   ELTYS_PREMIUM_PAINTING_IMG,
   [SASS, NEXTJS, REACT],
-  "https://github.com/mxrked/eltyspremiumpainting",
+  "https://github.com/mxrked/eltyspremiumpainting/tree/development",
   "https://eltyspremiumpainting.com/"
 );
 const FIBERCOMPANY_OBJ = new Project(
