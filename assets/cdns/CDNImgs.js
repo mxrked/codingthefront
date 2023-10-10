@@ -60,6 +60,11 @@ const FIBERCOMPANY_IMG = CDNImgReturn(
   "fiber-company-display",
   "webp"
 );
+const ELTYS_PREMIUM_PAINTING_IMG = CDNImgReturn(
+  "projects",
+  "eltys-premium-painting-display",
+  "webp"
+);
 
 export {
   IMG_LOTTIE_COMPUTER,
@@ -82,4 +87,5 @@ export {
   RADIANCE_GLOW_IMG,
   ANIMAL_ARK_OF_SUMMERLIN_IMG,
   DISTINCT_PAINTING_LLC_IMG,
+  ELTYS_PREMIUM_PAINTING_IMG,
 };
