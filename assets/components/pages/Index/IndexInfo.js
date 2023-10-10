@@ -78,9 +78,14 @@ export const IndexInfo = () => {
                     Software Engineer. His story is quite the inspiring one.
                   </p>
 
-                  <a href="/info" className="half-second">
+                  <button
+                    onClick={() => {
+                      router.push("/info");
+                    }}
+                    className="half-second"
+                  >
                     <span>Learn More</span>
-                  </a>
+                  </button>
                 </div>
               </div>
               <div

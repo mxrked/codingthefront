@@ -54,9 +54,14 @@ export const IndexContact = () => {
                     discuss project ideas and business opportunities.
                   </p>
 
-                  <a href="/contact" className="half-second">
+                  <button
+                    onClick={() => {
+                      router.push("/contact");
+                    }}
+                    className="half-second"
+                  >
                     <span>Learn More</span>
-                  </a>
+                  </button>
                 </div>
               </div>
               <div

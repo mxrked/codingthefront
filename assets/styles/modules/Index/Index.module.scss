@@ -79,7 +79,8 @@
               max-width: 240px;
 
               li {
-                a {
+                button {
+                  width: 100%;
                   font-size: $Text;
                   font-family: "FG Semibold";
                   text-decoration: none;
@@ -101,13 +102,13 @@
                 }
 
                 &:first-child {
-                  a {
+                  button {
                     width: 80px;
                   }
                 }
 
                 &:last-child {
-                  a {
+                  button {
                     width: 120px;
                   }
                 }
@@ -376,7 +377,8 @@
               cursor: default;
             }
 
-            a {
+            button {
+              width: 100%;
               font-size: $Text;
               font-family: "FG Semibold";
               text-decoration: none;
@@ -461,7 +463,8 @@
               cursor: default;
             }
 
-            a {
+            button {
+              width: 100%;
               font-size: $Text;
               font-family: "FG Semibold";
               text-decoration: none;
@@ -546,7 +549,8 @@
               cursor: default;
             }
 
-            a {
+            button {
+              width: 100%;
               font-size: $Text;
               font-family: "FG Semibold";
               text-decoration: none;
@@ -812,19 +816,19 @@
                 max-width: 210px;
 
                 li {
-                  a {
+                  button {
                     height: 45px;
                     font-size: 20px;
                   }
 
                   &:first-child {
-                    a {
+                    button {
                       width: 70px;
                     }
                   }
 
                   &:last-child {
-                    a {
+                    button {
                       width: 110px;
                     }
                   }
@@ -909,7 +913,7 @@
                 font-size: 21px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 height: 45px;
                 max-width: 130px;
@@ -967,7 +971,7 @@
                 font-size: 21px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 height: 45px;
                 max-width: 130px;
@@ -1025,7 +1029,7 @@
                 font-size: 21px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 height: 45px;
                 max-width: 130px;
@@ -1111,19 +1115,19 @@
                 max-width: 210px;
 
                 li {
-                  a {
+                  button {
                     height: 45px;
                     font-size: 20px;
                   }
 
                   &:first-child {
-                    a {
+                    button {
                       width: 70px;
                     }
                   }
 
                   &:last-child {
-                    a {
+                    button {
                       width: 110px;
                     }
                   }
@@ -1206,7 +1210,7 @@
                 font-size: 18px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 max-width: 130px;
                 height: 45px;
@@ -1262,7 +1266,7 @@
                 font-size: 18px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 max-width: 130px;
                 height: 45px;
@@ -1318,7 +1322,7 @@
                 font-size: 18px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 max-width: 130px;
                 height: 45px;
@@ -1402,19 +1406,19 @@
                 max-width: 180px;
 
                 li {
-                  a {
+                  button {
                     height: 40px;
                     font-size: 17px;
                   }
 
                   &:first-child {
-                    a {
+                    button {
                       width: 60px;
                     }
                   }
 
                   &:last-child {
-                    a {
+                    button {
                       width: 95px;
                     }
                   }
@@ -1482,7 +1486,7 @@
                 font-size: 16px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 max-width: 110px;
                 height: 40px;
@@ -1538,7 +1542,7 @@
                 font-size: 16px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 max-width: 110px;
                 height: 40px;
@@ -1594,7 +1598,7 @@
                 font-size: 16px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 max-width: 110px;
                 height: 40px;
@@ -1682,19 +1686,19 @@
                 margin-left: 0;
 
                 li {
-                  a {
+                  button {
                     height: 40px;
                     font-size: 17px;
                   }
 
                   &:first-child {
-                    a {
+                    button {
                       width: 60px;
                     }
                   }
 
                   &:last-child {
-                    a {
+                    button {
                       width: 95px;
                     }
                   }
@@ -1771,7 +1775,7 @@
                 font-size: 16px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 margin-right: 0;
                 max-width: 115px;
@@ -1835,7 +1839,7 @@
                 font-size: 16px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 margin-right: 0;
                 max-width: 115px;
@@ -1899,7 +1903,7 @@
                 font-size: 16px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 margin-right: 0;
                 max-width: 115px;
@@ -1989,19 +1993,19 @@
                 margin-left: 0;
 
                 li {
-                  a {
+                  button {
                     height: 40px;
                     font-size: 17px;
                   }
 
                   &:first-child {
-                    a {
+                    button {
                       width: 60px;
                     }
                   }
 
                   &:last-child {
-                    a {
+                    button {
                       width: 95px;
                     }
                   }
@@ -2091,7 +2095,7 @@
                 text-align: center;
               }
 
-              a {
+              button {
                 height: 40px;
                 font-size: 17px;
                 max-width: 120px;
@@ -2139,7 +2143,7 @@
                 @include quickCenter("relative");
               }
 
-              a {
+              button {
                 height: 40px;
                 font-size: 17px;
                 max-width: 120px;
@@ -2187,7 +2191,7 @@
                 text-align: center;
               }
 
-              a {
+              button {
                 height: 40px;
                 font-size: 17px;
                 max-width: 120px;
@@ -2274,19 +2278,19 @@
                 margin-left: 0;
 
                 li {
-                  a {
+                  button {
                     height: 40px;
                     font-size: 17px;
                   }
 
                   &:first-child {
-                    a {
+                    button {
                       width: 60px;
                     }
                   }
 
                   &:last-child {
-                    a {
+                    button {
                       width: 95px;
                     }
                   }
@@ -2362,7 +2366,7 @@
                 font-size: 18px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 margin-left: 0;
                 max-width: 115px;
@@ -2428,7 +2432,7 @@
                 font-size: 18px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 margin-left: 0;
                 max-width: 115px;
@@ -2494,7 +2498,7 @@
                 font-size: 18px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 margin-left: 0;
                 max-width: 115px;
@@ -2586,19 +2590,19 @@
                 margin-left: 0;
 
                 li {
-                  a {
+                  button {
                     height: 50px;
                     font-size: 19px;
                   }
 
                   &:first-child {
-                    a {
+                    button {
                       width: 65px;
                     }
                   }
 
                   &:last-child {
-                    a {
+                    button {
                       width: 105px;
                     }
                   }
@@ -2690,7 +2694,7 @@
                 font-size: 20px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 height: 50px;
                 font-size: 19px;
@@ -2746,7 +2750,7 @@
                 font-size: 20px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 height: 50px;
                 font-size: 19px;
@@ -2802,7 +2806,7 @@
                 font-size: 20px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 height: 50px;
                 font-size: 19px;
@@ -2893,19 +2897,19 @@
                 margin-left: 0;
 
                 li {
-                  a {
+                  button {
                     height: 40px;
                     font-size: 17px;
                   }
 
                   &:first-child {
-                    a {
+                    button {
                       width: 60px;
                     }
                   }
 
                   &:last-child {
-                    a {
+                    button {
                       width: 95px;
                     }
                   }
@@ -3004,7 +3008,7 @@
                 font-size: 20px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 margin-left: 0;
                 height: 40px;
@@ -3063,7 +3067,7 @@
                 font-size: 20px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 margin-left: 0;
                 height: 40px;
@@ -3122,7 +3126,7 @@
                 font-size: 20px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 margin-left: 0;
                 height: 40px;
@@ -3215,19 +3219,19 @@
                 margin-left: 0;
 
                 li {
-                  a {
+                  button {
                     height: 50px;
                     font-size: 19px;
                   }
 
                   &:first-child {
-                    a {
+                    button {
                       width: 65px;
                     }
                   }
 
                   &:last-child {
-                    a {
+                    button {
                       width: 105px;
                     }
                   }
@@ -3327,7 +3331,7 @@
                 font-size: 20px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 margin-left: 0;
                 height: 50px;
@@ -3387,7 +3391,7 @@
                 font-size: 20px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 margin-left: 0;
                 height: 50px;
@@ -3447,7 +3451,7 @@
                 font-size: 20px;
               }
 
-              a {
+              button {
                 @include quickCenter("relative");
                 margin-left: 0;
                 height: 50px;

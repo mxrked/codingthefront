@@ -68,14 +68,24 @@ export const IndexTop = () => {
 
                   <ul>
                     <li>
-                      <a href="/info" className="half-second">
+                      <button
+                        onClick={() => {
+                          router.push("/info");
+                        }}
+                        className="half-second"
+                      >
                         <span>Info</span>
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="/projects" className="half-second">
+                      <button
+                        onClick={() => {
+                          router.push("/projects");
+                        }}
+                        className="half-second"
+                      >
                         <span>Projects</span>
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>

@@ -54,9 +54,14 @@ export const IndexProjects = () => {
                     that are displayed for you to view/download.
                   </p>
 
-                  <a href="/projects" className="half-second">
+                  <button
+                    onClick={() => {
+                      router.push("/info");
+                    }}
+                    className="half-second"
+                  >
                     <span>Learn More</span>
-                  </a>
+                  </button>
                 </div>
               </div>
               <div
