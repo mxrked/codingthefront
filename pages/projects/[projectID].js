@@ -61,6 +61,10 @@ export default function Project({ TOTAL_NUMBER_OF_IPS }) {
   const ROBOTS = "";
   const PARENT = "";
 
+  useEffect(() => {
+    console.log("Website Visits: " + TOTAL_NUMBER_OF_IPS);
+  }, []);
+
   return (
     <div id="PAGE" className="page">
       <Head>

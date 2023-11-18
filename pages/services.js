@@ -89,6 +89,10 @@ export default function Services({
 }) {
   const router = useRouter();
 
+  useEffect(() => {
+    console.log("Website Visits: " + TOTAL_NUMBER_OF_IPS);
+  }, []);
+
   return (
     <div id="PAGE" className="page">
       <PageHead page_head_data={PH_SERVICES} icons_data={PH_ICONS} />

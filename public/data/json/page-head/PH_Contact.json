@@ -1,13 +1,11 @@
-[
-  {
-    "pageID": "P_5",
-    "pageParent": "",
-    "pageTitle": "",
-    "pageKeywords": [],
-    "pageDesc": "",
-    "pageRobots": "",
-    "ogImage": "",
-    "ogType": "website",
-    "ogLocale": "en_US"
-  }
-]
+{
+  "pageID": "P_5",
+  "pageParent": "",
+  "pageTitle": "",
+  "pageKeywords": [],
+  "pageDesc": "",
+  "pageRobots": "",
+  "ogImage": "",
+  "ogType": "website",
+  "ogLocale": "en_US"
+}

@@ -85,6 +85,10 @@ export async function getServerSideProps() {
 export default function Contact({ PH_CONTACT, PH_ICONS, TOTAL_NUMBER_OF_IPS }) {
   const router = useRouter();
 
+  useEffect(() => {
+    console.log("Website Visits: " + TOTAL_NUMBER_OF_IPS);
+  }, []);
+
   return (
     <div id="PAGE" className="page">
       <PageHead page_head_data={PH_CONTACT} icons_data={PH_ICONS} />

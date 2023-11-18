@@ -26,12 +26,22 @@ export async function getServerSideProps() {
     "public/data/json/page-head/",
     "PH_Info.json"
   );
+  const TESTIMONIALS_FILE_PATH = path.join(
+    process.cwd(),
+    "public/data/json/testimonials/",
+    "Testimonials.json"
+  );
 
   const PH_ICONS_FILE_CONTENTS = fs.readFileSync(PH_ICONS_FILE_PATH, "utf-8");
   const PH_INFO_FILE_CONTENTS = fs.readFileSync(PH_INFO_FILE_PATH, "utf-8");
+  const TESTIMONIALS_FILE_CONTENTS = fs.readFileSync(
+    TESTIMONIALS_FILE_PATH,
+    "utf-8"
+  );
 
   let PH_ICONS = undefined;
   let PH_INFO = undefined;
+  let TESTIMONIALS = undefined;
 
   // Connecting to DB
   try {
@@ -39,6 +49,7 @@ export async function getServerSideProps() {
 
     PH_ICONS = JSON.parse(PH_ICONS_FILE_CONTENTS);
     PH_INFO = JSON.parse(PH_INFO_FILE_CONTENTS);
+    TESTIMONIALS = JSON.parse(TESTIMONIALS_FILE_CONTENTS);
 
     if (!DB) {
       console.log("NO DATA!");
@@ -47,6 +58,7 @@ export async function getServerSideProps() {
         props: {
           TOTAL_NUMBER_OF_IPS: 0,
           PH_INFO,
+          TESTIMONIALS,
         },
       };
     }
@@ -62,6 +74,7 @@ export async function getServerSideProps() {
       props: {
         TOTAL_NUMBER_OF_IPS,
         PH_INFO,
+        TESTIMONIALS,
       },
     };
   } catch (error) {
@@ -71,13 +84,23 @@ export async function getServerSideProps() {
       props: {
         TOTAL_NUMBER_OF_IPS: 0,
         PH_INFO,
+        TESTIMONIALS,
       },
     };
   }
 }
 
-export default function Info({ PH_INFO, PH_ICONS, TOTAL_NUMBER_OF_IPS }) {
+export default function Info({
+  PH_INFO,
+  PH_ICONS,
+  TESTIMONIALS,
+  TOTAL_NUMBER_OF_IPS,
+}) {
   const router = useRouter();
+
+  useEffect(() => {
+    console.log("Website Visits: " + TOTAL_NUMBER_OF_IPS);
+  }, []);
 
   return (
     <div id="PAGE" className="page">
