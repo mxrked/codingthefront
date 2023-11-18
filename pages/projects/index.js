@@ -11,6 +11,10 @@ import { connectDatabase } from "@/db/connections/connectToDB";
 
 // Component Imports
 import { PageHead } from "@/assets/components/global/All/PageHead";
+import { LoadingScreen } from "@/assets/components/global/All/LoadingScreen";
+import { DesktopNav } from "@/assets/components/global/Nav/Desktop/DesktopNav";
+import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
+import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
 
 // Style Imports
 import "../../assets/styles/modules/Projects/Projects.module.css";
@@ -96,6 +100,13 @@ export default function Projects({
   return (
     <div id="PAGE" className="page">
       <PageHead page_head_data={PH_PROJECTS} icons_data={PH_ICONS} />
+      <LoadingScreen />
+
+      <div id="PAGE_CNT" className="page-cnt">
+        <DesktopNav />
+        <MobileNav />
+        <MobileNavMenu />
+      </div>
     </div>
   );
 }

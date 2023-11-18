@@ -5,7 +5,7 @@
  */
 
 const SERVER =
-  "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/";
+  "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/";
 
 function CDNBGReturn(bgSub, bgSubFile, fileExt) {
   let bgSrc;

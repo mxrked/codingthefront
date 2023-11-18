@@ -6,63 +6,549 @@
 // Fonts
 @font-face {
   font-family: "Noto Sans Extra Bold";
-  src: url("https://github.com/mxrked/CDN_codingthefront/raw/main/fonts/NotoSans-ExtraBold.ttf"),
-    Helvetica;
+  src: url("../../../fonts/NotoSans-ExtraBold.ttf"), Helvetica;
 }
 @font-face {
   font-family: "Noto Sans Bold";
-  src: url("https://github.com/mxrked/CDN_codingthefront/raw/main/fonts/NotoSans-Bold.ttf"),
-    Helvetica;
+  src: url("../../../fonts/NotoSans-Bold.ttf"), Helvetica;
 }
 @font-face {
   font-family: "Noto Sans Medium";
-  src: url("https://github.com/mxrked/CDN_codingthefront/raw/main/fonts/NotoSans-Medium.ttf"),
-    Helvetica;
+  src: url("../../../fonts/NotoSans-Medium.ttf"), Helvetica;
 }
 @font-face {
   font-family: "Noto Sans Regular";
-  src: url("https://github.com/mxrked/CDN_codingthefront/raw/main/fonts/NotoSans-Regular.ttf"),
-    Helvetica;
+  src: url("../../../fonts/NotoSans-Regular.ttf"), Helvetica;
 }
 
 // Desktop
+.desktop_nav {
+  background-color: $BlueZodiac;
+
+  .desktop_nav_inner {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1400px;
+    @include quickCenter("relative");
+
+    .desktop_nav_inner_box {
+      .desktop_nav_inner_row {
+        .desktop_nav_inner_side {
+          height: 150px;
+          display: flex;
+          align-items: center;
+        }
+
+        .desktop_nav_L {
+          justify-content: flex-start;
+
+          .desktop_nav_inner_side_cnt {
+            .logo {
+              img {
+                max-width: 180px;
+              }
+            }
+          }
+        }
+
+        .desktop_nav_R {
+          justify-content: flex-end;
+
+          .desktop_nav_inner_side_cnt {
+            @include displayElement(flex, flex-end, center);
+            width: 100%;
+
+            .links {
+              width: 100%;
+              max-width: 400px;
+              font-family: "Noto Sans Bold";
+              margin-right: 50px;
+              @include displayElement(flex, space-between, center);
+
+              li {
+                span {
+                  color: white;
+                  cursor: pointer;
+                  position: relative;
+
+                  span {
+                    width: 0;
+                    height: 2px;
+                    background-color: white;
+                    display: block;
+                    position: relative;
+                    top: 2px;
+                  }
+
+                  &:hover {
+                    span {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+
+            .socials {
+              @include displayElement(flex, flex-end, center);
+
+              li {
+                &:last-child {
+                  margin-left: 12px;
+                }
+
+                a {
+                  height: 35px;
+                  width: 35px;
+                  @include displayElement(flex, center, center);
+                  background-color: white;
+                  color: $BlueZodiac;
+                  border-radius: 5px;
+
+                  &:hover {
+                    background-color: $Matisse;
+                    color: white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.mobile_nav {
+  background-color: $BlueZodiac;
+
+  .mobile_nav_inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 800px;
+    @include quickCenter("relative");
+
+    .mobile_nav_inner_box {
+      .mobile_nav_inner_row {
+        .mobile_nav_inner_side {
+          height: 140px;
+          display: flex;
+          align-items: center;
+          max-width: 50%;
+        }
+
+        .mobile_nav_L {
+          justify-content: flex-start;
+
+          .mobile_nav_inner_side_cnt {
+            .logo {
+              img {
+                max-width: 140px;
+              }
+            }
+          }
+        }
+
+        .mobile_nav_R {
+          justify-content: flex-end;
+
+          .mobile_nav_inner_side_cnt {
+            @include displayElement(flex, flex-end, center);
+
+            .socials {
+              @include displayElement(flex, flex-end, center);
+              margin-right: 20px;
+
+              li {
+                &:last-child {
+                  margin-left: 12px;
+                }
+
+                a {
+                  height: 35px;
+                  width: 35px;
+                  @include displayElement(flex, center, center);
+                  background-color: white;
+                  color: $BlueZodiac;
+                  border-radius: 5px;
+
+                  &:hover {
+                    background-color: $Matisse;
+                    color: white;
+                  }
+                }
+              }
+            }
+
+            button {
+              width: 40px;
+              height: 40px;
+              display: block;
+
+              span {
+                height: 4px;
+                width: 30px;
+                display: block;
+                background-color: white;
+                @include quickCenter("relative");
+
+                &:nth-child(even) {
+                  margin-top: 7px;
+                  margin-bottom: 7px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.mobile_nav_menu {
+  // display: none;
+
+  .darken {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 18, 48, 0.83);
+    cursor: pointer;
+  }
+
+  .mobile_nav_menu_main {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    // transform: translateX(100%);
+    background-color: white;
+    max-width: 400px;
+
+    .mobile_nav_menu_main_cnt {
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%;
+      @include quickCenter("relative");
+
+      .mobile_nav_menu_main_cnt_top {
+        @include displayElement(flex, space-between, center);
+        height: 120px;
+
+        img {
+          max-width: 140px;
+        }
+
+        button {
+          @include displayElement(flex, center, center);
+          width: 35px;
+          height: 35px;
+          // border: 2px solid $BlueZodiac;
+          background-color: $BlueZodiac;
+          color: white;
+          font-size: clamp(20px, 20px, 20px);
+          // padding-right: 5px;
+
+          &:hover {
+            background-color: $Matisse;
+          }
+        }
+      }
+    }
+  }
+}
 
 // Responsive
 @media all and (max-width: 1995px) {
 }
 
 @media all and (max-width: 991px) {
+  .desktop_nav {
+    display: none;
+  }
+  .mobile_nav {
+    display: block;
+  }
 }
 
 @media (min-width: 992px) {
+  .mobile_nav {
+    display: none;
+  }
+
+  .mobile_nav_menu {
+  }
 }
 
 // Desktop Window (Smallest)
 @media all and (max-width: 768px) {
+  .desktop_nav {
+    display: none;
+  }
+  .mobile_nav {
+    display: block;
+
+    .mobile_nav_inner {
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .mobile_nav_inner_box {
+        .mobile_nav_inner_row {
+          .mobile_nav_inner_side {
+            height: 90px;
+          }
+
+          .mobile_nav_L {
+            .mobile_nav_inner_side_cnt {
+              .logo {
+                img {
+                  max-width: 120px;
+                }
+              }
+            }
+          }
+
+          .mobile_nav_R {
+            .mobile_nav_inner_side_cnt {
+              .socials {
+                li {
+                  a {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 15px;
+                  }
+                }
+              }
+
+              button {
+                span {
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Smaller Devices (Phones)
 @media all and (max-width: 419px) {
+  .desktop_nav {
+    display: none;
+  }
+  .mobile_nav {
+    display: block;
+
+    .mobile_nav_inner {
+      padding-left: 5px;
+      padding-right: 5px;
+
+      .mobile_nav_inner_box {
+        .mobile_nav_inner_row {
+          .mobile_nav_inner_side {
+            height: 70px;
+          }
+
+          .mobile_nav_L {
+            .mobile_nav_inner_side_cnt {
+              .logo {
+                img {
+                  max-width: 90px;
+                }
+              }
+            }
+          }
+
+          .mobile_nav_R {
+            .mobile_nav_inner_side_cnt {
+              .socials {
+                margin-right: 10px;
+
+                li {
+                  a {
+                    width: 25px;
+                    height: 25px;
+                    font-size: 11px;
+                  }
+                }
+              }
+
+              button {
+                width: 35px;
+
+                span {
+                  border-radius: 5px;
+                  height: 3px;
+                  width: 28px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Pixel 2 XL
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .desktop_nav {
+    display: none;
+  }
+  .mobile_nav {
+    display: block;
+
+    .mobile_nav_inner {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .mobile_nav_inner_box {
+        .mobile_nav_inner_row {
+          .mobile_nav_inner_side {
+            height: 80px;
+          }
+
+          .mobile_nav_L {
+            .mobile_nav_inner_side_cnt {
+              .logo {
+                img {
+                  max-width: 110px;
+                }
+              }
+            }
+          }
+
+          .mobile_nav_R {
+            .mobile_nav_inner_side_cnt {
+              .socials {
+                margin-right: 10px;
+
+                li {
+                  a {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 14px;
+                  }
+                }
+              }
+
+              button {
+                width: 45px;
+
+                span {
+                  border-radius: 5px;
+                  height: 3px;
+                  width: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Ipad
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .desktop_nav {
+    display: none;
+  }
+  .mobile_nav {
+    display: block;
+
+    .mobile_nav_inner {
+      padding-left: 35px;
+      padding-right: 35px;
+
+      .mobile_nav_inner_box {
+        .mobile_nav_inner_row {
+          .mobile_nav_inner_side {
+            height: 110px;
+          }
+
+          .mobile_nav_L {
+            .mobile_nav_inner_side_cnt {
+              .logo {
+                img {
+                  max-width: 150px;
+                }
+              }
+            }
+          }
+
+          .mobile_nav_R {
+            .mobile_nav_inner_side_cnt {
+              .socials {
+                margin-right: 15px;
+
+                li {
+                  a {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 16px;
+                  }
+                }
+              }
+
+              button {
+                width: 45px;
+
+                span {
+                  border-radius: 5px;
+                  height: 3px;
+                  width: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .desktop_nav {
+    display: block;
+  }
+  .mobile_nav,
+  .mobile_nav_menu {
+    display: none;
+  }
 }
 
 // iPad Pro
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .desktop_nav {
+    display: block;
+  }
+  .mobile_nav,
+  .mobile_nav_menu {
+    display: none;
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .desktop_nav {
+    display: block;
+  }
+  .mobile_nav,
+  .mobile_nav_menu {
+    display: none;
+  }
 }
 
 // Laptops
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .desktop_nav {
+    display: block;
+  }
+  .mobile_nav,
+  .mobile_nav_menu {
+    display: none;
+  }
 }

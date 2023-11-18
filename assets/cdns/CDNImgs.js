@@ -6,6 +6,10 @@
 
 import { CDNImgReturn } from "./CDNReturns";
 
+const BLUE_LOGO = CDNImgReturn("logos", "codingthefront-03-BLUE", "webp");
+const WHITE_LOGO = CDNImgReturn("logos", "codingthefront-03-WHITE", "webp");
+
 const PIC_OF_ME = CDNImgReturn("index", "pic-of-me", "webp");
 
-export {};
+export { BLUE_LOGO, WHITE_LOGO };
+export { PIC_OF_ME };
