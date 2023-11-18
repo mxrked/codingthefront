@@ -10,6 +10,7 @@ import path from "path";
 import { connectDatabase } from "@/db/connections/connectToDB";
 
 // Component Imports
+import { PageHead } from "@/assets/components/global/All/PageHead";
 
 // Style Imports
 import "../../assets/styles/modules/Projects/Projects.module.css";
@@ -88,5 +89,9 @@ export default function Projects({
 }) {
   const router = useRouter();
 
-  return "";
+  return (
+    <div id="PAGE" className="page">
+      <PageHead page_head_data={PH_PROJECTS} icons_data={PH_ICONS} />
+    </div>
+  );
 }

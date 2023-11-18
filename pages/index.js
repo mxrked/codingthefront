@@ -10,6 +10,7 @@ import path from "path";
 import { connectDatabase } from "@/db/connections/connectToDB";
 
 // Component Imports
+import { PageHead } from "@/assets/components/global/All/PageHead";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
@@ -81,5 +82,9 @@ export async function getServerSideProps() {
 export default function Home({ PH_INDEX, PH_ICONS, TOTAL_NUMBER_OF_IPS }) {
   const router = useRouter();
 
-  return "";
+  return (
+    <div id="PAGE" className="page">
+      <PageHead page_head_data={PH_INDEX} icons_data={PH_ICONS} />
+    </div>
+  );
 }

@@ -1,6 +1,7 @@
 // React/Next Imports
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import fs from "fs";
 import path from "path";
 
@@ -14,21 +15,9 @@ import path from "path";
 import "../../assets/styles/modules/Projects/Projects.module.css";
 
 export async function getServerSideProps() {
-  const PH_ICONS_FILE_PATH = path.join(
-    process.cwd(),
-    "public/data/json/page-head/",
-    "PH_Icons.json"
-  );
-
-  const PH_ICONS_FILE_CONTENTS = fs.readFileSync(PH_ICONS_FILE_PATH, "utf-8");
-
-  let PH_ICONS = undefined;
-
   // Connecting to DB
   try {
     const DB = await connectDatabase();
-
-    PH_ICONS = JSON.parse(PH_ICONS_FILE_CONTENTS);
 
     if (!DB) {
       console.log("NO DATA!");
@@ -36,7 +25,6 @@ export async function getServerSideProps() {
       return {
         props: {
           TOTAL_NUMBER_OF_IPS: 0,
-          PH_ICONS,
         },
       };
     }
@@ -51,7 +39,6 @@ export async function getServerSideProps() {
     return {
       props: {
         TOTAL_NUMBER_OF_IPS,
-        PH_ICONS,
       },
     };
   } catch (error) {
@@ -60,14 +47,194 @@ export async function getServerSideProps() {
     return {
       props: {
         TOTAL_NUMBER_OF_IPS: 0,
-        PH_ICONS,
       },
     };
   }
 }
 
-export default function Project({ PH_ICONS, TOTAL_NUMBER_OF_IPS }) {
+export default function Project({ TOTAL_NUMBER_OF_IPS }) {
   const router = useRouter();
 
-  return "";
+  const TITLE = "";
+  const DESC = "";
+  const KEYWORDS = [];
+  const ROBOTS = "";
+  const PARENT = "";
+
+  return (
+    <div id="PAGE" className="page">
+      <Head>
+        <title>{TITLE}</title>
+
+        <meta name="keywords" content={KEYWORDS} />
+        <meta name="description" content={DESC} />
+        <meta name="robots" content={ROBOTS} />
+        <link rel="canonical" href={PARENT} />
+
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/favicon/favicon.ico"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/favicon/favicon-16x16.png"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/favicon/favicon-32x32.png"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="48x48"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/favicon/favicon-48x48.png"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="64x64"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/favicon/favicon-64x64.png"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/favicon/favicon-96x96.png"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="128x128"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/favicon/favicon-128x128.png"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/favicon/favicon-192x192.png"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/favicon/favicon-512x512.png"
+          }
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="57x57"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/apple-touch/apple-touch-icon-57x57.png"
+          }
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="76x76"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/apple-touch/apple-touch-icon-76x76.png"
+          }
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="120x120"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/apple-touch/apple-touch-icon-120x120.png"
+          }
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="152x152"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/apple-touch/apple-touch-icon-152x152.png"
+          }
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/apple-touch/apple-touch-icon-180x180.png"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="72x72"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/android/android-icon-72x72.png"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/android/android-icon-96x96.png"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="144x144"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/android/android-icon-144x144.png"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/android/android-icon-192x192.png"
+          }
+        />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+          name="msapplication-TileImage"
+          content={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/ms-app/ms-app-icon-32x32.png"
+          }
+        />
+        <meta
+          name="msapplication-square70x70logo"
+          content={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/ms-app/ms-app-icon-70x70.png"
+          }
+        />
+        <meta
+          name="msapplication-square150x150logo"
+          content={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/ms-app/ms-app-icon-150x150.png"
+          }
+        />
+        <meta
+          name="msapplication-wide310x150logo"
+          content={
+            "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/icons/tab-icons/ms-app/ms-app-icon-310x150.png"
+          }
+        />
+      </Head>
+    </div>
+  );
 }
