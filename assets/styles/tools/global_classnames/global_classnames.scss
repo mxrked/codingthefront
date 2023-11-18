@@ -1,0 +1,71 @@
+.full-second {
+    transition: 1s ease-in-out !important;
+  }
+  
+  .half-second {
+    transition: 0.5s ease-in-out !important;
+  }
+  
+  //   .stay-put {
+  //     // transform: translateX(0) !important;
+  //     transition: 0s ease-in-out !important;
+  //     opacity: 1 !important;
+  //   }
+  
+  .selected {
+    &::selection {
+      background-color: #256d85;
+      color: white;
+      // background-color: #1092a7;
+      // color: black;
+      //   background-color: #722180;
+      //   background-color: #3fd7d7;
+      //   color: white;
+    }
+  
+    &::-moz-selection {
+      background-color: #256d85;
+      color: white;
+      // background-color: #1092a7;
+      // color: black;
+      //   background-color: #722180;
+      //   background-color: #3fd7d7;
+      //   color: white;
+    }
+  }
+  
+  //   .mobile-nav-holder {
+  //     width: 100%;
+  //     height: 100%;
+  //     border: none !important;
+  //     outline: none !important;
+  //     caret-color: transparent !important;
+  //   }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .shake-element {
+    animation: shakeElement 0.2s ease-in-out infinite;
+  }
+  
+  @keyframes shakeElement {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    25%,
+    75% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+  }
+  
+  //   .disabled-modal-img {
+  //     opacity: 0.5;
+  //     pointer-events: none;
+  //   }
+  

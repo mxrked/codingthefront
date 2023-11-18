@@ -1,1 +1,41 @@
-/*# sourceMappingURL=global_classnames.css.map */
+.full-second {
+  transition: 1s ease-in-out !important;
+}
+
+.half-second {
+  transition: 0.5s ease-in-out !important;
+}
+
+.selected::-moz-selection {
+  background-color: #256d85;
+  color: white;
+}
+
+.selected::selection {
+  background-color: #256d85;
+  color: white;
+}
+.selected::-moz-selection {
+  background-color: #256d85;
+  color: white;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.shake-element {
+  animation: shakeElement 0.2s ease-in-out infinite;
+}
+
+@keyframes shakeElement {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}/*# sourceMappingURL=global_classnames.css.map */

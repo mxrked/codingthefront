@@ -3,8 +3,29 @@
 @import "../../tools/themes/themes.scss";
 @import "../../tools/variables/variable.scss";
 
-// Desktop 
+// Fonts
+@font-face {
+  font-family: "Noto Sans Extra Bold";
+  src: url("https://github.com/mxrked/CDN_codingthefront/raw/main/fonts/NotoSans-ExtraBold.ttf"),
+    Helvetica;
+}
+@font-face {
+  font-family: "Noto Sans Bold";
+  src: url("https://github.com/mxrked/CDN_codingthefront/raw/main/fonts/NotoSans-Bold.ttf"),
+    Helvetica;
+}
+@font-face {
+  font-family: "Noto Sans Medium";
+  src: url("https://github.com/mxrked/CDN_codingthefront/raw/main/fonts/NotoSans-Medium.ttf"),
+    Helvetica;
+}
+@font-face {
+  font-family: "Noto Sans Regular";
+  src: url("https://github.com/mxrked/CDN_codingthefront/raw/main/fonts/NotoSans-Regular.ttf"),
+    Helvetica;
+}
 
+// Desktop
 
 // Responsive
 @media all and (max-width: 1995px) {
