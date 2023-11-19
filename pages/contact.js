@@ -94,11 +94,11 @@ export default function Contact({ PH_CONTACT, PH_ICONS, TOTAL_NUMBER_OF_IPS }) {
   }, []);
 
   return (
-    <div id="PAGE" className="page">
+    <div id="PAGE" className="page half-second">
       <PageHead page_head_data={PH_CONTACT} icons_data={PH_ICONS} />
       <LoadingScreen />
 
-      <div id="PAGE_CNT" className="page-cnt">
+      <div id="PAGE_CNT" className="page-cnt half-second">
         <DesktopNav />
         <MobileNav />
         <MobileNavMenu />

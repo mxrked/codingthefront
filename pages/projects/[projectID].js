@@ -70,7 +70,7 @@ export default function Project({ TOTAL_NUMBER_OF_IPS }) {
   }, []);
 
   return (
-    <div id="PAGE" className="page">
+    <div id="PAGE" className="page half-second">
       <Head>
         <title>{TITLE}</title>
 
@@ -245,7 +245,7 @@ export default function Project({ TOTAL_NUMBER_OF_IPS }) {
       </Head>
       <LoadingScreen />
 
-      <div id="PAGE_CNT" className="page-cnt">
+      <div id="PAGE_CNT" className="page-cnt half-second">
         <DesktopNav />
         <MobileNav />
         <MobileNavMenu />

@@ -98,11 +98,11 @@ export default function Services({
   }, []);
 
   return (
-    <div id="PAGE" className="page">
+    <div id="PAGE" className="page half-second">
       <PageHead page_head_data={PH_SERVICES} icons_data={PH_ICONS} />
       <LoadingScreen />
 
-      <div id="PAGE_CNT" className="page-cnt">
+      <div id="PAGE_CNT" className="page-cnt half-second">
         <DesktopNav />
         <MobileNav />
         <MobileNavMenu />
