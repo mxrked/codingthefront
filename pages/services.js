@@ -28,7 +28,7 @@ export async function getServerSideProps() {
   const PH_SERVICES_FILE_PATH = path.join(
     process.cwd(),
     "public/data/json/page-head/",
-    "PH_Index.json"
+    "PH_Services.json"
   );
 
   const PH_ICONS_FILE_CONTENTS = fs.readFileSync(PH_ICONS_FILE_PATH, "utf-8");
