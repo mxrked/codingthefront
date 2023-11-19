@@ -12,6 +12,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
 
+import TriggerPageExit from "@/assets/functions/dom/triggers/TriggerPageExit";
+
 import styles from "../../../../styles/modules/Nav/Nav.module.css";
 
 export const DesktopNav = () => {
@@ -31,7 +33,11 @@ export const DesktopNav = () => {
                     style={{ cursor: "pointer" }}
                     className={`${styles.logo} half-second`}
                     onClick={() => {
-                      router.push("/");
+                      TriggerPageExit();
+
+                      setTimeout(() => {
+                        router.push("/");
+                      }, 600);
                     }}
                   >
                     <LazyLoadImage
@@ -64,7 +70,11 @@ export const DesktopNav = () => {
                       <span
                         className="orientation-change-element half-second"
                         onClick={() => {
-                          router.push("/");
+                          TriggerPageExit();
+
+                          setTimeout(() => {
+                            router.push("/");
+                          }, 600);
                         }}
                       >
                         Home
@@ -79,12 +89,16 @@ export const DesktopNav = () => {
                       </span>
                     )}
                   </li>
-                  <li>
+                  <li className={`${styles.mobile_nav_menu_projects_li}`}>
                     {router.pathname !== "/projects" ? (
                       <span
                         className="orientation-change-element half-second"
                         onClick={() => {
-                          router.push("/projects");
+                          TriggerPageExit();
+
+                          setTimeout(() => {
+                            router.push("/projects");
+                          }, 600);
                         }}
                       >
                         Projects
@@ -104,7 +118,11 @@ export const DesktopNav = () => {
                       <span
                         className="orientation-change-element half-second"
                         onClick={() => {
-                          router.push("/services");
+                          TriggerPageExit();
+
+                          setTimeout(() => {
+                            router.push("/services");
+                          }, 600);
                         }}
                       >
                         Services
@@ -124,7 +142,11 @@ export const DesktopNav = () => {
                       <span
                         className="orientation-change-element half-second"
                         onClick={() => {
-                          router.push("/info");
+                          TriggerPageExit();
+
+                          setTimeout(() => {
+                            router.push("/info");
+                          }, 600);
                         }}
                       >
                         About
@@ -144,7 +166,11 @@ export const DesktopNav = () => {
                       <span
                         className="orientation-change-element half-second"
                         onClick={() => {
-                          router.push("/contact");
+                          TriggerPageExit();
+
+                          setTimeout(() => {
+                            router.push("/contact");
+                          }, 600);
                         }}
                       >
                         Contact

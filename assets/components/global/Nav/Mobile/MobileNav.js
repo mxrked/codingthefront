@@ -12,6 +12,9 @@ import { MdMail } from "react-icons/md";
 
 import { BLUE_LOGO } from "@/assets/cdns/CDNImgs";
 
+import TriggerPageExit from "@/assets/functions/dom/triggers/TriggerPageExit";
+import ToggleMobileNav from "@/assets/functions/dom/togglers/ToggleMobileNav";
+
 import styles from "../../../../styles/modules/Nav/Nav.module.css";
 
 export const MobileNav = () => {
@@ -31,7 +34,11 @@ export const MobileNav = () => {
                     style={{ cursor: "pointer" }}
                     className={`${styles.logo} half-second`}
                     onClick={() => {
-                      router.push("/");
+                      TriggerPageExit();
+
+                      setTimeout(() => {
+                        router.push("/");
+                      }, 600);
                     }}
                   >
                     <LazyLoadImage
@@ -77,7 +84,12 @@ export const MobileNav = () => {
                   </li>
                 </ul>
 
-                <button id="mobileNavToggler">
+                <button
+                  id="mobileNavToggler"
+                  onClick={() => {
+                    ToggleMobileNav();
+                  }}
+                >
                   <span className="half-second orientation-change-element" />
                   <span className="half-second orientation-change-element" />
                   <span className="half-second orientation-change-element" />
