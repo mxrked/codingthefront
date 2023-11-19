@@ -62,6 +62,7 @@ export async function getServerSideProps() {
         props: {
           TOTAL_NUMBER_OF_IPS: 0,
           PH_INFO,
+          PH_ICONS,
           TESTIMONIALS,
         },
       };
@@ -78,6 +79,7 @@ export async function getServerSideProps() {
       props: {
         TOTAL_NUMBER_OF_IPS,
         PH_INFO,
+        PH_ICONS,
         TESTIMONIALS,
       },
     };
@@ -88,6 +90,7 @@ export async function getServerSideProps() {
       props: {
         TOTAL_NUMBER_OF_IPS: 0,
         PH_INFO,
+        PH_ICONS,
         TESTIMONIALS,
       },
     };
