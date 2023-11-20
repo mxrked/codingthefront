@@ -13,4 +13,78 @@
 @font-face {
   font-family: "Noto Sans Regular";
   src: url("../../../fonts/NotoSans-Regular.ttf"), Helvetica;
+}
+.index_top {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.index_top .index_top_main {
+  height: 1200px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.index_top .index_top_main .video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.index_top .index_top_main .index_top_main_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 47, 80, 0.5176470588);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.index_top .index_top_main .index_top_main_overlay .index_top_main_overlay_cnt {
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  margin-bottom: 270px;
+}
+.index_top .index_top_main .index_top_main_overlay .index_top_main_overlay_cnt .top_text {
+  font-family: "Noto Sans Bold";
+  font-size: 30px;
+}
+.index_top .index_top_main .index_top_main_overlay .index_top_main_overlay_cnt h1 {
+  font-family: "Noto Sans Extra Bold";
+  font-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+}
+.index_top .index_top_main .index_top_main_overlay .index_top_main_overlay_cnt p {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Noto Sans Medium";
+  font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.index_top .divider_holder {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
+.index_top .divider_holder .bg {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=Index.module.css.map */
