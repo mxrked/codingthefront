@@ -50,4 +50,16 @@ function CDNImgReturn(imgSub, imgSubFile, fileExt) {
   return imgSrc;
 }
 
-export { CDNBGReturn, CDNVideoReturn, CDNImgReturn };
+function CDNSVGReturn(svgSub, svgSubFile) {
+  let svgSrc;
+
+  if (svgSub) {
+    if (svgSubFile) {
+      svgSrc = SERVER + "svgs/" + svgSub + "/" + svgSubFile + ".svg";
+    }
+  }
+
+  return svgSrc;
+}
+
+export { CDNBGReturn, CDNVideoReturn, CDNImgReturn, CDNSVGReturn };
