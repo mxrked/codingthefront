@@ -16,6 +16,8 @@ import { DesktopNav } from "@/assets/components/global/Nav/Desktop/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
 
+import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
+
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
 
@@ -118,6 +120,8 @@ export default function Home({
         <DesktopNav />
         <MobileNav />
         <MobileNavMenu />
+
+        <IndexTop />
       </div>
     </div>
   );
