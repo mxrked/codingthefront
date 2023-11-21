@@ -4,14 +4,22 @@
  *
  */
 
+import { useRouter } from "next/router";
+
 import { LazyLoadBackgroundImage } from "../../global/All/LazyLoadBackgroundImage";
 
 import { TOP_VIDEO, TOP_VIDEO_POSTER } from "@/assets/cdns/CDNVideos";
 import { DIVIDER_TOP_WAVE_WHITE } from "@/assets/cdns/CDNSVGs";
 
+import TriggerPageExit from "@/assets/functions/dom/triggers/TriggerPageExit";
+
 import styles from "../../../styles/modules/Index/Index.module.css";
 
 export const IndexTop = () => {
+  const router = useRouter();
+
+  const OVERLAY_TITLE = "codingthefront: Blue polygon and triangles video.";
+
   return (
     <section id="indexTop" className={`${styles.index_top}`}>
       <div className={`${styles.index_top_main}`}>
@@ -25,15 +33,22 @@ export const IndexTop = () => {
           className={styles.video}
         />
 
-        <div className={`${styles.index_top_main_overlay}`}>
+        <div
+          id="indexTopMainOverlay"
+          className={`${styles.index_top_main_overlay}`}
+          title="codingthefront: Blue polygon and triangles video."
+        >
           <div className={`${styles.index_top_main_overlay_cnt}`}>
             <span
               className={`${styles.top_text} orientation-change-element half-second`}
             >
-              Winston-Salem, Greensboro, High Point, Mt. Airy
+              Winston-Salem, Greensboro,
+              <br /> High Point, Mt. Airy
             </span>
             <h1 className="orientation-change-element half-second">
-              WEB DEVELOPER/DESIGNER.
+              WEB DEVELOPER/
+              <br />
+              DESIGNER.
             </h1>
 
             <p className="orientation-change-element half-second">
@@ -47,11 +62,40 @@ export const IndexTop = () => {
             <ul>
               <li
                 className={`${styles.contact_link} orientation-change-element half-second`}
+                onClick={() => {
+                  TriggerPageExit();
+
+                  setTimeout(() => {
+                    router.push("/contact");
+                  }, 500);
+                }}
+                onMouseEnter={() => {
+                  document.getElementById("indexTopMainOverlay").title = "";
+                }}
+                onMouseLeave={() => {
+                  document.getElementById("indexTopMainOverlay").title =
+                    OVERLAY_TITLE;
+                }}
               >
                 <span>Book A Project</span>
               </li>
+              <br />
               <li
                 className={`${styles.projects_link} orientation-change-element half-second`}
+                onClick={() => {
+                  TriggerPageExit();
+
+                  setTimeout(() => {
+                    router.push("/projects");
+                  }, 500);
+                }}
+                onMouseEnter={() => {
+                  document.getElementById("indexTopMainOverlay").title = "";
+                }}
+                onMouseLeave={() => {
+                  document.getElementById("indexTopMainOverlay").title =
+                    OVERLAY_TITLE;
+                }}
               >
                 <span>My Projects</span>
               </li>
