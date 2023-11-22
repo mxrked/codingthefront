@@ -17,9 +17,11 @@ import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
 
 import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
+import { IndexAbout } from "@/assets/components/pages/Index/IndexAbout";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
+import { FadeLeft } from "@/assets/animations/components/FadeLeft";
 
 export async function getServerSideProps() {
   const PH_ICONS_FILE_PATH = path.join(
@@ -122,6 +124,10 @@ export default function Home({
         <MobileNavMenu />
 
         <IndexTop />
+
+        <FadeLeft threshold={0.5}>
+          <IndexAbout />
+        </FadeLeft>
       </div>
     </div>
   );
