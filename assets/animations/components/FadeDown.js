@@ -14,7 +14,7 @@ export const FadeDown = ({ children }) => {
   const REF = useRef(null);
 
   return (
-    <motion.div ref={REF} {...FADE_DOWN} className="fm-element">
+    <motion.div ref={REF} {...FADE_DOWN} className="fm-element fade-down-FM">
       {children}
     </motion.div>
   );
