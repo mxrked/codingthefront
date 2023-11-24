@@ -7,7 +7,6 @@
 import { useRouter } from "next/router";
 
 import { FaReact, FaSass } from "react-icons/fa";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { LazyLoadBackgroundImage } from "../../global/All/LazyLoadBackgroundImage";
 
 import { PIC_OF_ME } from "@/assets/cdns/CDNImgs";
@@ -28,7 +27,7 @@ export const IndexAbout = () => {
               className={`${styles.index_about_inner_side} ${styles.index_about_L} col-lg-5 col-md-5 col-sm-12 col-xs-12`}
             >
               <div className={`${styles.index_about_inner_side_cnt}`}>
-                <div className={`${styles.img_holder}`}>
+                <div className={`${styles.img_holder} half-second`}>
                   {/**
                   <LazyLoadImage
                     src={PIC_OF_ME}
@@ -47,11 +46,15 @@ export const IndexAbout = () => {
                     }
                   />
 
-                  <div className={`${styles.icon_holder} ${styles.react_icon}`}>
+                  <div
+                    className={`${styles.icon_holder} ${styles.react_icon} half-second`}
+                  >
                     <FaReact className={`${styles.icon}`} />
                   </div>
 
-                  <div className={`${styles.icon_holder} ${styles.sass_icon}`}>
+                  <div
+                    className={`${styles.icon_holder} ${styles.sass_icon} half-second`}
+                  >
                     <FaSass className={`${styles.icon}`} />
                   </div>
                 </div>
