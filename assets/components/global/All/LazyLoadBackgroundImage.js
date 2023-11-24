@@ -46,7 +46,7 @@ export const LazyLoadBackgroundImage = ({
           src={image_url}
           alt={image_url !== NOT_FOUND_URL ? image_alt : "404 Image."}
           title={image_url !== NOT_FOUND_URL ? image_alt : "404 Image."}
-          className={style_className_PLACEHOLDER}
+          className={`${style_className_PLACEHOLDER} half-second`}
           effect="blur"
           loading="eager"
         />
@@ -54,7 +54,7 @@ export const LazyLoadBackgroundImage = ({
 
       <div
         ref={CONTAINER_REF}
-        className={`${style_className_MAIN} ${
+        className={`${style_className_MAIN} half-second ${
           SHOW_PLACEHOLDER ? "hidden" : ""
         }`}
         style={{
