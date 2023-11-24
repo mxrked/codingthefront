@@ -33,19 +33,25 @@ export const MobileNav = () => {
                   <div
                     style={{ cursor: "pointer" }}
                     className={`${styles.logo} half-second`}
-                    onClick={() => {
-                      TriggerPageExit();
-
-                      setTimeout(() => {
-                        router.push("/");
-                      }, 600);
-                    }}
                   >
-                    <LazyLoadImage
-                      alt="codingthefront: Company Logo."
-                      title="codingthefront: Company Logo."
-                      src={BLUE_LOGO}
-                    />
+                    <a
+                      href="/"
+                      onClick={(e) => {
+                        e.preventDefault();
+
+                        TriggerPageExit();
+
+                        setTimeout(() => {
+                          router.push("/");
+                        }, 600);
+                      }}
+                    >
+                      <LazyLoadImage
+                        alt="codingthefront: Company Logo."
+                        title="codingthefront: Company Logo."
+                        src={BLUE_LOGO}
+                      />
+                    </a>
                   </div>
                 ) : (
                   <div

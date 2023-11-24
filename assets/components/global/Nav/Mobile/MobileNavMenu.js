@@ -63,9 +63,11 @@ export const MobileNavMenu = () => {
             <ul>
               <li>
                 {router.pathname !== "/" ? (
-                  <span
-                    className="orientation-change-element half-second"
-                    onClick={() => {
+                  <a
+                    href="/"
+                    onClick={(e) => {
+                      e.preventDefault();
+
                       CloseMobileNav();
 
                       setTimeout(() => {
@@ -74,12 +76,14 @@ export const MobileNavMenu = () => {
 
                       setTimeout(() => {
                         router.push("/");
-                      }, 1900);
+                      }, 1800);
                     }}
                   >
-                    Home
-                    <span className="half-second" />
-                  </span>
+                    <span className="orientation-change-element half-second">
+                      Home
+                      <span className="half-second" />
+                    </span>
+                  </a>
                 ) : (
                   <span
                     className="orientation-change-element half-second"
@@ -91,9 +95,11 @@ export const MobileNavMenu = () => {
               </li>
               <li className={`${styles.mobile_nav_menu_projects_li}`}>
                 {router.pathname !== "/projects" ? (
-                  <span
-                    className="orientation-change-element half-second"
-                    onClick={() => {
+                  <a
+                    href="/projects"
+                    onClick={(e) => {
+                      e.preventDefault();
+
                       CloseMobileNav();
 
                       setTimeout(() => {
@@ -102,12 +108,14 @@ export const MobileNavMenu = () => {
 
                       setTimeout(() => {
                         router.push("/projects");
-                      }, 1900);
+                      }, 1800);
                     }}
                   >
-                    Projects
-                    <span className="half-second" />
-                  </span>
+                    <span className="orientation-change-element half-second">
+                      Projects
+                      <span className="half-second" />
+                    </span>
+                  </a>
                 ) : (
                   <span
                     className="orientation-change-element half-second"
@@ -119,9 +127,11 @@ export const MobileNavMenu = () => {
               </li>
               <li>
                 {router.pathname !== "/services" ? (
-                  <span
-                    className="orientation-change-element half-second"
-                    onClick={() => {
+                  <a
+                    href="/services"
+                    onClick={(e) => {
+                      e.preventDefault();
+
                       CloseMobileNav();
 
                       setTimeout(() => {
@@ -130,12 +140,14 @@ export const MobileNavMenu = () => {
 
                       setTimeout(() => {
                         router.push("/services");
-                      }, 1900);
+                      }, 1800);
                     }}
                   >
-                    Services
-                    <span className="half-second" />
-                  </span>
+                    <span>
+                      Services
+                      <span className="half-second" />
+                    </span>
+                  </a>
                 ) : (
                   <span
                     className="orientation-change-element half-second"
@@ -147,9 +159,11 @@ export const MobileNavMenu = () => {
               </li>
               <li>
                 {router.pathname !== "/info" ? (
-                  <span
-                    className="orientation-change-element half-second"
-                    onClick={() => {
+                  <a
+                    href="/info"
+                    onClick={(e) => {
+                      e.preventDefault();
+
                       CloseMobileNav();
 
                       setTimeout(() => {
@@ -158,12 +172,14 @@ export const MobileNavMenu = () => {
 
                       setTimeout(() => {
                         router.push("/info");
-                      }, 1900);
+                      }, 1800);
                     }}
                   >
-                    About
-                    <span className="half-second" />
-                  </span>
+                    <span className="orientation-change-element half-second">
+                      About
+                      <span className="half-second" />
+                    </span>
+                  </a>
                 ) : (
                   <span
                     className="orientation-change-element half-second"
@@ -175,9 +191,11 @@ export const MobileNavMenu = () => {
               </li>
               <li>
                 {router.pathname !== "/contact" ? (
-                  <span
-                    className="orientation-change-element half-second"
-                    onClick={() => {
+                  <a
+                    href="/contact"
+                    onClick={(e) => {
+                      e.preventDefault();
+
                       CloseMobileNav();
 
                       setTimeout(() => {
@@ -186,12 +204,14 @@ export const MobileNavMenu = () => {
 
                       setTimeout(() => {
                         router.push("/contact");
-                      }, 1900);
+                      }, 1800);
                     }}
                   >
-                    Contact
-                    <span className="half-second" />
-                  </span>
+                    <span className="orientation-change-element half-second">
+                      Contact
+                      <span className="half-second" />
+                    </span>
+                  </a>
                 ) : (
                   <span
                     className="orientation-change-element half-second"
