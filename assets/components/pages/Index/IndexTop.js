@@ -13,6 +13,8 @@ import { DIVIDER_TOP_WAVE_WHITE } from "@/assets/cdns/CDNSVGs";
 
 import TriggerPageExit from "@/assets/functions/dom/triggers/TriggerPageExit";
 
+import { LazyLoadVideo } from "../../global/All/LazyLoadVideo";
+
 import styles from "../../../styles/modules/Index/Index.module.css";
 
 export const IndexTop = () => {
@@ -23,14 +25,21 @@ export const IndexTop = () => {
   return (
     <section id="indexTop" className={`${styles.index_top}`}>
       <div className={`${styles.index_top_main}`}>
-        <video
-          // controls
-          autoPlay
-          loop
-          muted
-          src={TOP_VIDEO}
-          poster={TOP_VIDEO_POSTER}
-          className={styles.video}
+        {/**
+          <Suspense
+          fallback={() => {
+            <div>Loading..</div>;
+          }}
+        >
+          <LazyLoadVideo />
+        </Suspense>
+        */}
+
+        <LazyLoadVideo
+          videoSrc={TOP_VIDEO}
+          videoStyle={styles.video}
+          videoID="indexTopVideo"
+          // videoPoster={TOP_VIDEO_POSTER}
         />
 
         <div
