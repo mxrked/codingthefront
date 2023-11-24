@@ -66,25 +66,34 @@
               @include displayElement(flex, space-between, center);
 
               li {
-                span {
+                a {
+                  text-decoration: none;
                   color: white;
-                  cursor: pointer;
-                  position: relative;
 
                   span {
-                    width: 0;
-                    height: 2px;
-                    background-color: white;
-                    display: block;
+                    color: white;
+                    cursor: pointer;
                     position: relative;
-                    top: 2px;
-                  }
 
-                  &:hover {
                     span {
-                      width: 100%;
+                      width: 0;
+                      height: 2px;
+                      background-color: white;
+                      display: block;
+                      position: relative;
+                      top: 2px;
+                    }
+
+                    &:hover {
+                      span {
+                        width: 100%;
+                      }
                     }
                   }
+                }
+
+                span {
+                  color: white;
                 }
               }
             }

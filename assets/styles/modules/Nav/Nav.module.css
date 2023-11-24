@@ -53,12 +53,16 @@
   justify-content: space-between;
   align-items: center;
 }
-.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_R .desktop_nav_inner_side_cnt .links li span {
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_R .desktop_nav_inner_side_cnt .links li a {
+  text-decoration: none;
+  color: white;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_R .desktop_nav_inner_side_cnt .links li a span {
   color: white;
   cursor: pointer;
   position: relative;
 }
-.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_R .desktop_nav_inner_side_cnt .links li span span {
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_R .desktop_nav_inner_side_cnt .links li a span span {
   width: 0;
   height: 2px;
   background-color: white;
@@ -66,8 +70,11 @@
   position: relative;
   top: 2px;
 }
-.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_R .desktop_nav_inner_side_cnt .links li span:hover span {
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_R .desktop_nav_inner_side_cnt .links li a span:hover span {
   width: 100%;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_R .desktop_nav_inner_side_cnt .links li span {
+  color: white;
 }
 .desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_R .desktop_nav_inner_side_cnt .socials {
   display: flex;

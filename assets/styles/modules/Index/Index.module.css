@@ -33,6 +33,7 @@
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  transform: scaleY(-1);
 }
 .index_top .index_top_main .index_top_main_overlay {
   position: absolute;
@@ -40,7 +41,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(14, 47, 80, 0.5176470588);
+  background-color: rgba(14, 47, 80, 0.8352941176);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,11 +75,11 @@
   display: none;
 }
 .index_top .index_top_main .index_top_main_overlay .index_top_main_overlay_cnt p {
-  max-width: 1150px;
+  max-width: 1350px;
   margin-left: auto;
   margin-right: auto;
   font-family: "Noto Sans Medium";
-  font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  font-size: clamp(1rem, 0.54vw + 1rem, 1.33rem);
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -98,6 +99,10 @@
   font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   border-radius: 5px;
 }
+.index_top .index_top_main .index_top_main_overlay .index_top_main_overlay_cnt ul li a {
+  color: white;
+  text-decoration: none;
+}
 .index_top .index_top_main .index_top_main_overlay .index_top_main_overlay_cnt ul li:hover {
   background-color: #19548f;
 }
@@ -110,6 +115,7 @@
   position: absolute;
   bottom: -50px;
   left: 0;
+  filter: drop-shadow(2px 2px 22px rgba(4, 22, 40, 0.8352941176));
 }
 .index_top .divider_holder .bg {
   width: 100%;
@@ -215,10 +221,10 @@
 }
 .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_R .index_about_inner_side_cnt p {
   font-family: "Noto Sans Medium";
-  font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  font-size: clamp(1rem, 0.54vw + 1rem, 1.33rem);
   color: #030c14;
 }
-.index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_R .index_about_inner_side_cnt div {
+.index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_R .index_about_inner_side_cnt a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -233,8 +239,9 @@
   font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   border-radius: 5px;
   margin-top: 40px;
+  text-decoration: none;
 }
-.index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_R .index_about_inner_side_cnt div:hover {
+.index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_R .index_about_inner_side_cnt a:hover {
   background-color: #19548f;
 }
 

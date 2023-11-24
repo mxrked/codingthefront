@@ -40,6 +40,7 @@
       top: 0;
       left: 0;
       object-fit: cover;
+      transform: scaleY(-1);
     }
 
     .index_top_main_overlay {
@@ -48,7 +49,7 @@
       height: 100%;
       top: 0;
       left: 0;
-      background-color: #0e2f5084;
+      background-color: #0e2f50d5;
       @include displayElement(flex, center, center);
       overflow: hidden;
       white-space: normal;
@@ -83,10 +84,10 @@
         }
 
         p {
-          max-width: 1150px;
+          max-width: 1350px;
           @include quickCenter("relative");
           font-family: "Noto Sans Medium";
-          font-size: $Text;
+          font-size: $SmallText;
           margin-top: 20px;
           margin-bottom: 40px;
         }
@@ -105,6 +106,11 @@
             cursor: pointer;
             font-size: $Link;
             border-radius: 5px;
+
+            a {
+              color: white;
+              text-decoration: none;
+            }
 
             &:hover {
               background-color: $Matisse;
@@ -125,6 +131,7 @@
     position: absolute;
     bottom: -50px;
     left: 0;
+    filter: drop-shadow(2px 2px 22px #041628d5);
 
     .bg {
       width: 100%;
@@ -256,11 +263,11 @@
 
             p {
               font-family: "Noto Sans Medium";
-              font-size: $Text;
+              font-size: $SmallText;
               color: $BlackPearl;
             }
 
-            div {
+            a {
               @include displayElement(inline-flex, center, center);
               height: 55px;
               // border: 3px solid $Matisse;
@@ -274,6 +281,7 @@
               font-size: $Link;
               border-radius: 5px;
               margin-top: 40px;
+              text-decoration: none;
 
               &:hover {
                 background-color: $Matisse;
