@@ -15,13 +15,15 @@ import { LoadingScreen } from "@/assets/components/global/All/LoadingScreen";
 import { DesktopNav } from "@/assets/components/global/Nav/Desktop/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
+import { FadeLeft } from "@/assets/animations/components/FadeLeft";
+import { FadeRight } from "@/assets/animations/components/FadeRight";
 
 import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
 import { IndexAbout } from "@/assets/components/pages/Index/IndexAbout";
+import { IndexProjects } from "@/assets/components/pages/Index/IndexProjects";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
-import { FadeLeft } from "@/assets/animations/components/FadeLeft";
 
 export async function getServerSideProps() {
   const PH_ICONS_FILE_PATH = path.join(
@@ -34,6 +36,11 @@ export async function getServerSideProps() {
     "public/data/json/page-head/",
     "PH_Index.json"
   );
+  const PROJECTS_FILE_PATH = path.join(
+    process.cwd(),
+    "public/data/json/projects/",
+    "Projects.json"
+  );
   const TESTIMONIALS_FILE_PATH = path.join(
     process.cwd(),
     "public/data/json/testimonials/",
@@ -42,6 +49,7 @@ export async function getServerSideProps() {
 
   const PH_ICONS_FILE_CONTENTS = fs.readFileSync(PH_ICONS_FILE_PATH, "utf-8");
   const PH_INDEX_FILE_CONTENTS = fs.readFileSync(PH_INDEX_FILE_PATH, "utf-8");
+  const PROJECTS_FILE_CONTENTS = fs.readFileSync(PROJECTS_FILE_PATH, "utf-8");
   const TESTIMONIALS_FILE_CONTENTS = fs.readFileSync(
     TESTIMONIALS_FILE_PATH,
     "utf-8"
@@ -49,6 +57,7 @@ export async function getServerSideProps() {
 
   let PH_ICONS = undefined;
   let PH_INDEX = undefined;
+  let PROJECTS = undefined;
   let TESTIMONIALS = undefined;
 
   // Connecting to DB
@@ -57,6 +66,7 @@ export async function getServerSideProps() {
 
     PH_ICONS = JSON.parse(PH_ICONS_FILE_CONTENTS);
     PH_INDEX = JSON.parse(PH_INDEX_FILE_CONTENTS);
+    PROJECTS = JSON.parse(PROJECTS_FILE_CONTENTS);
     TESTIMONIALS = JSON.parse(TESTIMONIALS_FILE_CONTENTS);
 
     if (!DB) {
@@ -67,6 +77,7 @@ export async function getServerSideProps() {
           TOTAL_NUMBER_OF_IPS: 0,
           PH_ICONS,
           PH_INDEX,
+          PROJECTS,
           TESTIMONIALS,
         },
       };
@@ -84,6 +95,7 @@ export async function getServerSideProps() {
         TOTAL_NUMBER_OF_IPS,
         PH_ICONS,
         PH_INDEX,
+        PROJECTS,
         TESTIMONIALS,
       },
     };
@@ -95,6 +107,7 @@ export async function getServerSideProps() {
         TOTAL_NUMBER_OF_IPS: 0,
         PH_ICONS,
         PH_INDEX,
+        PROJECTS,
         TESTIMONIALS,
       },
     };
@@ -104,6 +117,7 @@ export async function getServerSideProps() {
 export default function Home({
   PH_INDEX,
   PH_ICONS,
+  PROJECTS,
   TESTIMONIALS,
   TOTAL_NUMBER_OF_IPS,
 }) {
@@ -128,6 +142,10 @@ export default function Home({
         <FadeLeft threshold={0.5}>
           <IndexAbout />
         </FadeLeft>
+
+        <FadeRight threshold={0.5}>
+          <IndexProjects projects_data={PROJECTS} />
+        </FadeRight>
       </div>
     </div>
   );
