@@ -39,13 +39,13 @@ export const IndexTop = () => {
           videoSrc={TOP_VIDEO}
           videoStyle={styles.video}
           videoID="indexTopVideo"
-          // videoPoster={TOP_VIDEO_POSTER}
+          videoPoster={TOP_VIDEO_POSTER}
         />
 
         <div
           id="indexTopMainOverlay"
           className={`${styles.index_top_main_overlay}`}
-          title="codingthefront: Blue polygon and triangles video."
+          title="codingthefront: Blue polygon and squares video."
         >
           <div className={`${styles.index_top_main_overlay_cnt}`}>
             <span
@@ -61,9 +61,11 @@ export const IndexTop = () => {
             </h1>
 
             <p className="orientation-change-element half-second">
-              Hey, I'm Parker, the force behind Codingthefront. Your top-rated
-              web developer in Winston-Salem, Greensboro, High Point, and Mt.
-              Airy. Need Affordable Web Design?
+              Hello there! I'm Parker, the creative mind driving Codingthefront
+              - your go-to web development and design expert serving
+              Winston-Salem, Greensboro, High Point, and Mt. Airy. Looking for
+              budget-friendly web design solutions?
+              <br />
               <br />
               Look no further—I'll bring your digital dreams to life.
             </p>
@@ -71,42 +73,57 @@ export const IndexTop = () => {
             <ul>
               <li
                 className={`${styles.contact_link} orientation-change-element half-second`}
-                onClick={() => {
-                  TriggerPageExit();
-
-                  setTimeout(() => {
-                    router.push("/contact");
-                  }, 500);
-                }}
-                onMouseEnter={() => {
-                  document.getElementById("indexTopMainOverlay").title = "";
-                }}
-                onMouseLeave={() => {
-                  document.getElementById("indexTopMainOverlay").title =
-                    OVERLAY_TITLE;
-                }}
               >
-                <span>Book A Project</span>
+                <a
+                  href="/contact"
+                  className="orientation-change-element half-second"
+                  onClick={(e) => {
+                    e.preventDefault();
+
+                    TriggerPageExit();
+
+                    setTimeout(() => {
+                      router.push("/contact");
+                    }, 500);
+                  }}
+                  onMouseEnter={() => {
+                    document.getElementById("indexTopMainOverlay").title = "";
+                  }}
+                  onMouseLeave={() => {
+                    document.getElementById("indexTopMainOverlay").title =
+                      OVERLAY_TITLE;
+                  }}
+                >
+                  <span>Book A Project</span>
+                </a>
               </li>
               <br />
               <li
                 className={`${styles.projects_link} orientation-change-element half-second`}
-                onClick={() => {
-                  TriggerPageExit();
-
-                  setTimeout(() => {
-                    router.push("/projects");
-                  }, 500);
-                }}
-                onMouseEnter={() => {
-                  document.getElementById("indexTopMainOverlay").title = "";
-                }}
-                onMouseLeave={() => {
-                  document.getElementById("indexTopMainOverlay").title =
-                    OVERLAY_TITLE;
-                }}
               >
-                <span>My Projects</span>
+                {" "}
+                <a
+                  href="/projects"
+                  className="orientation-change-element half-second"
+                  onClick={(e) => {
+                    e.preventDefault();
+
+                    TriggerPageExit();
+
+                    setTimeout(() => {
+                      router.push("/projects");
+                    }, 500);
+                  }}
+                  onMouseEnter={() => {
+                    document.getElementById("indexTopMainOverlay").title = "";
+                  }}
+                  onMouseLeave={() => {
+                    document.getElementById("indexTopMainOverlay").title =
+                      OVERLAY_TITLE;
+                  }}
+                >
+                  <span>My Projects</span>
+                </a>
               </li>
             </ul>
           </div>

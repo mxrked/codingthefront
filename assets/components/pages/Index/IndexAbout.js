@@ -72,14 +72,18 @@ export const IndexAbout = () => {
                 </span>
 
                 <p className="orientation-change-element half-second">
-                  Curious about who's handling your project? It's just me -
-                  Parker, your Experienced Web Developer. Check out my portfolio
-                  to see how I turn ideas into digital realities.
+                  Wondering about the mastermind behind your project? I am
+                  Parker, your skilled web developer with a wealth of
+                  experience. Explore my portfolio to witness how I transform
+                  concepts into compelling digital realities.
                 </p>
 
-                <div
+                <a
+                  href="/info"
                   className="orientation-change-element half-second"
-                  onClick={() => {
+                  onClick={(e) => {
+                    e.preventDefault();
+
                     TriggerPageExit();
 
                     setTimeout(() => {
@@ -88,7 +92,7 @@ export const IndexAbout = () => {
                   }}
                 >
                   <span>Learn More</span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
