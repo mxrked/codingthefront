@@ -32,19 +32,25 @@ export const DesktopNav = () => {
                   <div
                     style={{ cursor: "pointer" }}
                     className={`${styles.logo} half-second`}
-                    onClick={() => {
-                      TriggerPageExit();
-
-                      setTimeout(() => {
-                        router.push("/");
-                      }, 600);
-                    }}
                   >
-                    <LazyLoadImage
-                      alt="codingthefront: Company Logo."
-                      title="codingthefront: Company Logo."
-                      src={BLUE_LOGO}
-                    />
+                    <a
+                      href="/"
+                      onClick={(e) => {
+                        e.preventDefault();
+
+                        TriggerPageExit();
+
+                        setTimeout(() => {
+                          router.push("/");
+                        }, 600);
+                      }}
+                    >
+                      <LazyLoadImage
+                        alt="codingthefront: Company Logo."
+                        title="codingthefront: Company Logo."
+                        src={BLUE_LOGO}
+                      />
+                    </a>
                   </div>
                 ) : (
                   <div
@@ -67,9 +73,11 @@ export const DesktopNav = () => {
                 <ul className={`${styles.links}`}>
                   <li>
                     {router.pathname !== "/" ? (
-                      <span
-                        className="orientation-change-element half-second"
-                        onClick={() => {
+                      <a
+                        href="/"
+                        onClick={(e) => {
+                          e.preventDefault();
+
                           TriggerPageExit();
 
                           setTimeout(() => {
@@ -77,9 +85,11 @@ export const DesktopNav = () => {
                           }, 600);
                         }}
                       >
-                        Home
-                        <span className="half-second" />
-                      </span>
+                        <span className="orientation-change-element half-second">
+                          Home
+                          <span className="half-second" />
+                        </span>
+                      </a>
                     ) : (
                       <span
                         className="orientation-change-element half-second"
@@ -91,9 +101,11 @@ export const DesktopNav = () => {
                   </li>
                   <li className={`${styles.mobile_nav_menu_projects_li}`}>
                     {router.pathname !== "/projects" ? (
-                      <span
-                        className="orientation-change-element half-second"
-                        onClick={() => {
+                      <a
+                        href="/projects"
+                        onClick={(e) => {
+                          e.preventDefault();
+
                           TriggerPageExit();
 
                           setTimeout(() => {
@@ -101,9 +113,11 @@ export const DesktopNav = () => {
                           }, 600);
                         }}
                       >
-                        Projects
-                        <span className="half-second" />
-                      </span>
+                        <span className="orientation-change-element half-second">
+                          Projects
+                          <span className="half-second" />
+                        </span>
+                      </a>
                     ) : (
                       <span
                         className="orientation-change-element half-second"
@@ -115,9 +129,11 @@ export const DesktopNav = () => {
                   </li>
                   <li>
                     {router.pathname !== "/services" ? (
-                      <span
-                        className="orientation-change-element half-second"
-                        onClick={() => {
+                      <a
+                        href="/services"
+                        onClick={(e) => {
+                          e.preventDefault();
+
                           TriggerPageExit();
 
                           setTimeout(() => {
@@ -125,9 +141,11 @@ export const DesktopNav = () => {
                           }, 600);
                         }}
                       >
-                        Services
-                        <span className="half-second" />
-                      </span>
+                        <span>
+                          Services
+                          <span className="half-second" />
+                        </span>
+                      </a>
                     ) : (
                       <span
                         className="orientation-change-element half-second"
@@ -139,9 +157,11 @@ export const DesktopNav = () => {
                   </li>
                   <li>
                     {router.pathname !== "/info" ? (
-                      <span
-                        className="orientation-change-element half-second"
-                        onClick={() => {
+                      <a
+                        href="/info"
+                        onClick={(e) => {
+                          e.preventDefault();
+
                           TriggerPageExit();
 
                           setTimeout(() => {
@@ -149,9 +169,11 @@ export const DesktopNav = () => {
                           }, 600);
                         }}
                       >
-                        About
-                        <span className="half-second" />
-                      </span>
+                        <span className="orientation-change-element half-second">
+                          About
+                          <span className="half-second" />
+                        </span>
+                      </a>
                     ) : (
                       <span
                         className="orientation-change-element half-second"
@@ -163,9 +185,11 @@ export const DesktopNav = () => {
                   </li>
                   <li>
                     {router.pathname !== "/contact" ? (
-                      <span
-                        className="orientation-change-element half-second"
-                        onClick={() => {
+                      <a
+                        href="/contact"
+                        onClick={(e) => {
+                          e.preventDefault();
+
                           TriggerPageExit();
 
                           setTimeout(() => {
@@ -173,9 +197,11 @@ export const DesktopNav = () => {
                           }, 600);
                         }}
                       >
-                        Contact
-                        <span className="half-second" />
-                      </span>
+                        <span className="orientation-change-element half-second">
+                          Contact
+                          <span className="half-second" />
+                        </span>
+                      </a>
                     ) : (
                       <span
                         className="orientation-change-element half-second"
