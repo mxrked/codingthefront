@@ -1,1 +1,39 @@
-[{}]
+[
+  {
+    "projectID": "P_1",
+    "projectImgs": [
+      "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/imgs/projects/radiance-glow-hsc-display.webp",
+      "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/imgs/projects/radiance-glow-hsc/index.webp",
+      "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/imgs/projects/radiance-glow-hsc/about.webp",
+      "https://raw.githubusercontent.com/mxrked/CDN_codingthefront/main/imgs/projects/radiance-glow-hsc/contact.webp"
+    ],
+    "projectName": "Radiance Glow HSC",
+    "projectDesc": "A modern and improved upgrade of the Radiance Glow Hard Surface Cleaning website, made completely responsive and fits more closely to the theme of the company.",
+    "projectLink": "https://radianceglowhsc.com/",
+    "projectTechs": ["React", "Nextjs", "Sass"]
+  },
+  {
+    "projectID": "P_2",
+    "projectImgs": [],
+    "projectName": "",
+    "projectDesc": "",
+    "projectLink": "",
+    "projectTechs": ["React", "Nextjs", "Sass"]
+  },
+  {
+    "projectID": "P_3",
+    "projectImgs": [],
+    "projectName": "",
+    "projectDesc": "",
+    "projectLink": "",
+    "projectTechs": ["React", "Nextjs", "Sass"]
+  },
+  {
+    "projectID": "P_4",
+    "projectImgs": [],
+    "projectName": "",
+    "projectDesc": "",
+    "projectLink": "",
+    "projectTechs": ["React", "Nextjs", "Sass"]
+  }
+]
