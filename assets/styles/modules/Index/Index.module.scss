@@ -41,6 +41,7 @@
       left: 0;
       object-fit: cover;
       transform: scaleY(-1);
+      filter: brightness(30%);
     }
 
     .index_top_main_overlay {
@@ -49,7 +50,7 @@
       height: 100%;
       top: 0;
       left: 0;
-      background-color: #0e2f50d5;
+      background-color: #0e2f505d;
       @include displayElement(flex, center, center);
       overflow: hidden;
       white-space: normal;
@@ -149,6 +150,7 @@
   .index_about_inner {
     max-width: 1600px;
     @include quickCenter("relative");
+    overflow: hidden;
 
     .index_about_inner_box {
       .index_about_inner_row {
@@ -184,7 +186,6 @@
               //   // border: 2px solid #0f3051;
               //   border-radius: 4px;
               // }
-
               .bg,
               .bg_placeholder {
                 position: absolute;
@@ -194,6 +195,7 @@
                 left: 0;
                 @include bGSU(cover, center);
                 border-radius: 4px;
+                filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.414));
               }
 
               .icon_holder {
@@ -421,6 +423,76 @@
       bottom: 0;
     }
   }
+  .index_about {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .index_about_inner {
+      .index_about_inner_box {
+        .index_about_inner_row {
+          .index_about_inner_side {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .index_about_L {
+            height: 400px;
+
+            .index_about_inner_side_cnt {
+              justify-content: center;
+
+              .img_holder {
+                max-width: 400px;
+                max-height: 350px;
+
+                .icon_holder {
+                  font-size: clamp(40px, 45px, 45px);
+                }
+
+                .sass_icon {
+                  right: -35px;
+                }
+
+                .react_icon {
+                  bottom: -35px;
+                }
+              }
+            }
+          }
+
+          .index_about_R {
+            padding-top: 90px;
+            padding-bottom: 90px;
+            justify-content: center;
+
+            .index_about_inner_side_cnt {
+              max-width: 700px;
+              text-align: center;
+
+              h2 {
+                font-size: clamp(30px, 37px, 37px);
+              }
+
+              .bottom_text {
+                font-size: clamp(19px, 24px, 24px);
+              }
+
+              p {
+                max-width: 550px;
+                font-size: clamp(15px, 18px, 18px);
+              }
+
+              a {
+                height: 45px;
+                font-size: clamp(15px, 17px, 17px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -464,13 +536,85 @@
       bottom: 0;
     }
   }
+  .index_about {
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    .index_about_inner {
+      .index_about_inner_box {
+        .index_about_inner_row {
+          .index_about_inner_side {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .index_about_L {
+            height: 400px;
+
+            .index_about_inner_side_cnt {
+              justify-content: center;
+
+              .img_holder {
+                max-width: 300px;
+                max-height: 250px;
+
+                .icon_holder {
+                  font-size: clamp(30px, 35px, 35px);
+                }
+
+                .sass_icon {
+                  right: -35px;
+                }
+
+                .react_icon {
+                  bottom: -35px;
+                }
+              }
+            }
+          }
+
+          .index_about_R {
+            padding-top: 10px;
+            padding-bottom: 40px;
+            justify-content: center;
+
+            .index_about_inner_side_cnt {
+              max-width: 700px;
+              text-align: center;
+              padding-left: 20px;
+              padding-right: 20px;
+
+              h2 {
+                font-size: clamp(30px, 32px, 32px);
+              }
+
+              p {
+                max-width: 440px;
+                font-size: clamp(14px, 16px, 16px);
+              }
+
+              .bottom_text {
+                font-size: clamp(14px, 19px, 19px);
+              }
+
+              a {
+                height: 45px;
+                font-size: clamp(13px, 16px, 16px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Smaller Devices (Phones)
 @media all and (max-width: 419px) {
   .index_top {
     .index_top_main {
-      height: 640px;
+      height: 680px;
 
       .index_top_main_overlay {
         .index_top_main_overlay_cnt {
@@ -519,8 +663,89 @@
     }
 
     .divider_holder {
-      height: 140px;
+      height: 110px;
       bottom: 0;
+    }
+  }
+  .index_about {
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    .index_about_inner {
+      .index_about_inner_box {
+        .index_about_inner_row {
+          padding: 0;
+
+          .index_about_inner_side {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .index_about_L {
+            height: 200px;
+
+            .index_about_inner_side_cnt {
+              justify-content: center;
+
+              .img_holder {
+                max-width: 270px;
+                max-height: 160px;
+
+                .icon_holder {
+                  font-size: clamp(20px, 25px, 25px);
+                }
+
+                .sass_icon {
+                  right: -15px;
+                  bottom: -20px;
+                }
+
+                .react_icon {
+                  left: -15px;
+                  right: auto;
+                  bottom: -20px;
+                }
+              }
+            }
+          }
+
+          .index_about_R {
+            padding-top: 30px;
+            padding-bottom: 0px;
+            justify-content: center;
+
+            .index_about_inner_side_cnt {
+              max-width: 700px;
+              text-align: center;
+              padding-left: 10px;
+              padding-right: 10px;
+
+              h2 {
+                font-size: clamp(24px, 24px, 24px);
+                max-width: 300px;
+                margin-top: 10px;
+              }
+
+              p {
+                max-width: 250px;
+                font-size: clamp(14px, 14px, 14px);
+              }
+
+              .bottom_text {
+                font-size: clamp(12px, 15px, 15px);
+              }
+
+              a {
+                height: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: clamp(13px, 14px, 14px);
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -582,6 +807,87 @@
       bottom: 0;
     }
   }
+  .index_about {
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    .index_about_inner {
+      .index_about_inner_box {
+        .index_about_inner_row {
+          padding: 0;
+
+          .index_about_inner_side {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .index_about_L {
+            height: 200px;
+
+            .index_about_inner_side_cnt {
+              justify-content: center;
+
+              .img_holder {
+                max-width: 270px;
+                max-height: 180px;
+
+                .icon_holder {
+                  font-size: clamp(20px, 25px, 25px);
+                }
+
+                .sass_icon {
+                  right: -15px;
+                  bottom: -20px;
+                }
+
+                .react_icon {
+                  left: -15px;
+                  right: auto;
+                  bottom: -20px;
+                }
+              }
+            }
+          }
+
+          .index_about_R {
+            padding-top: 30px;
+            padding-bottom: 0px;
+            justify-content: center;
+
+            .index_about_inner_side_cnt {
+              max-width: 700px;
+              text-align: center;
+              padding-left: 10px;
+              padding-right: 10px;
+
+              h2 {
+                font-size: clamp(24px, 24px, 24px);
+                max-width: 100%;
+                margin-top: 10px;
+              }
+
+              p {
+                max-width: 350px;
+                font-size: clamp(14px, 14px, 14px);
+              }
+
+              .bottom_text {
+                font-size: clamp(12px, 15px, 15px);
+              }
+
+              a {
+                height: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: clamp(13px, 14px, 14px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Ipad
@@ -641,6 +947,87 @@
       bottom: 0;
     }
   }
+  .index_about {
+    margin-top: 60px;
+    margin-bottom: 120px;
+
+    .index_about_inner {
+      .index_about_inner_box {
+        .index_about_inner_row {
+          padding: 0;
+
+          .index_about_inner_side {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .index_about_L {
+            height: 350px;
+
+            .index_about_inner_side_cnt {
+              justify-content: center;
+
+              .img_holder {
+                max-width: 370px;
+                max-height: 240px;
+
+                .icon_holder {
+                  font-size: clamp(30px, 35px, 35px);
+                }
+
+                .sass_icon {
+                  right: -15px;
+                  bottom: -20px;
+                }
+
+                .react_icon {
+                  left: -15px;
+                  right: auto;
+                  bottom: -20px;
+                }
+              }
+            }
+          }
+
+          .index_about_R {
+            padding-top: 30px;
+            padding-bottom: 0px;
+            justify-content: center;
+
+            .index_about_inner_side_cnt {
+              max-width: 700px;
+              text-align: center;
+              padding-left: 10px;
+              padding-right: 10px;
+
+              h2 {
+                font-size: clamp(39px, 39px, 39px);
+                max-width: 570px;
+                margin-top: 10px;
+              }
+
+              p {
+                max-width: 550px;
+                font-size: clamp(17px, 18px, 18px);
+              }
+
+              .bottom_text {
+                font-size: clamp(16px, 19px, 19px);
+              }
+
+              a {
+                height: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-size: clamp(17px, 18px, 18px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -697,6 +1084,87 @@
     .divider_holder {
       height: 110px;
       bottom: 0;
+    }
+  }
+  .index_about {
+    margin-top: 20px;
+    margin-bottom: 90px;
+
+    .index_about_inner {
+      .index_about_inner_box {
+        .index_about_inner_row {
+          padding: 0;
+
+          .index_about_inner_side {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .index_about_L {
+            height: 350px;
+
+            .index_about_inner_side_cnt {
+              justify-content: center;
+
+              .img_holder {
+                max-width: 370px;
+                max-height: 240px;
+
+                .icon_holder {
+                  font-size: clamp(30px, 35px, 35px);
+                }
+
+                .sass_icon {
+                  right: -15px;
+                  bottom: -20px;
+                }
+
+                .react_icon {
+                  left: -15px;
+                  right: auto;
+                  bottom: -20px;
+                }
+              }
+            }
+          }
+
+          .index_about_R {
+            padding-top: 30px;
+            padding-bottom: 0px;
+            justify-content: center;
+
+            .index_about_inner_side_cnt {
+              max-width: 700px;
+              text-align: center;
+              padding-left: 10px;
+              padding-right: 10px;
+
+              h2 {
+                font-size: clamp(31px, 34px, 34px);
+                max-width: 570px;
+                margin-top: 10px;
+              }
+
+              p {
+                max-width: 550px;
+                font-size: clamp(17px, 18px, 18px);
+              }
+
+              .bottom_text {
+                font-size: clamp(16px, 19px, 19px);
+              }
+
+              a {
+                height: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-size: clamp(17px, 18px, 18px);
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -758,6 +1226,87 @@
       bottom: 0;
     }
   }
+  .index_about {
+    margin-top: 80px;
+    margin-bottom: 120px;
+
+    .index_about_inner {
+      .index_about_inner_box {
+        .index_about_inner_row {
+          padding: 0;
+
+          .index_about_inner_side {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .index_about_L {
+            height: 380px;
+
+            .index_about_inner_side_cnt {
+              justify-content: center;
+
+              .img_holder {
+                max-width: 370px;
+                max-height: 320px;
+
+                .icon_holder {
+                  font-size: clamp(35px, 45px, 45px);
+                }
+
+                .sass_icon {
+                  right: -15px;
+                  bottom: -20px;
+                }
+
+                .react_icon {
+                  left: -15px;
+                  right: auto;
+                  bottom: -20px;
+                }
+              }
+            }
+          }
+
+          .index_about_R {
+            padding-top: 60px;
+            padding-bottom: 0px;
+            justify-content: center;
+
+            .index_about_inner_side_cnt {
+              max-width: 700px;
+              text-align: center;
+              padding-left: 10px;
+              padding-right: 10px;
+
+              h2 {
+                font-size: clamp(40px, 45px, 45px);
+                max-width: 770px;
+                margin-top: 10px;
+              }
+
+              p {
+                max-width: 750px;
+                font-size: clamp(17px, 18px, 18px);
+              }
+
+              .bottom_text {
+                font-size: clamp(18px, 20px, 20px);
+              }
+
+              a {
+                height: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-size: clamp(17px, 18px, 18px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -814,6 +1363,90 @@
     .divider_holder {
       height: 160px;
       bottom: 0;
+    }
+  }
+  .index_about {
+    margin-top: 30px;
+    margin-bottom: 70px;
+
+    .index_about_inner {
+      max-width: 950px;
+
+      .index_about_inner_box {
+        .index_about_inner_row {
+          padding: 0;
+
+          .index_about_inner_side {
+            height: 480px;
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .index_about_L {
+            max-width: 40%;
+
+            .index_about_inner_side_cnt {
+              justify-content: center;
+
+              .img_holder {
+                max-width: 370px;
+                max-height: 360px;
+
+                .icon_holder {
+                  font-size: clamp(35px, 45px, 45px);
+                }
+
+                .sass_icon {
+                  right: -15px;
+                  bottom: -20px;
+                }
+
+                .react_icon {
+                  left: -15px;
+                  right: auto;
+                  bottom: -20px;
+                }
+              }
+            }
+          }
+
+          .index_about_R {
+            max-width: 60%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            justify-content: center;
+
+            .index_about_inner_side_cnt {
+              max-width: 700px;
+              text-align: left;
+              padding-left: 50px;
+              padding-right: 10px;
+
+              h2 {
+                font-size: clamp(40px, 45px, 45px);
+                max-width: 770px;
+                margin-top: 10px;
+              }
+
+              p {
+                max-width: 750px;
+                font-size: clamp(17px, 18px, 18px);
+              }
+
+              .bottom_text {
+                font-size: clamp(18px, 20px, 20px);
+              }
+
+              a {
+                height: 40px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-size: clamp(17px, 18px, 18px);
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -873,6 +1506,90 @@
     .divider_holder {
       height: 200px;
       bottom: 0;
+    }
+  }
+  .index_about {
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    .index_about_inner {
+      max-width: 1150px;
+
+      .index_about_inner_box {
+        .index_about_inner_row {
+          padding: 0;
+
+          .index_about_inner_side {
+            height: 480px;
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .index_about_L {
+            max-width: 40%;
+
+            .index_about_inner_side_cnt {
+              justify-content: center;
+
+              .img_holder {
+                max-width: 370px;
+                max-height: 360px;
+
+                .icon_holder {
+                  font-size: clamp(35px, 45px, 45px);
+                }
+
+                .sass_icon {
+                  right: -15px;
+                  bottom: -20px;
+                }
+
+                .react_icon {
+                  left: -15px;
+                  right: auto;
+                  bottom: -20px;
+                }
+              }
+            }
+          }
+
+          .index_about_R {
+            max-width: 60%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            justify-content: center;
+
+            .index_about_inner_side_cnt {
+              max-width: 700px;
+              text-align: left;
+              padding-left: 50px;
+              padding-right: 10px;
+
+              h2 {
+                font-size: clamp(40px, 45px, 45px);
+                max-width: 770px;
+                margin-top: 0px;
+              }
+
+              p {
+                max-width: 750px;
+                font-size: clamp(17px, 18px, 18px);
+              }
+
+              .bottom_text {
+                font-size: clamp(18px, 20px, 20px);
+              }
+
+              a {
+                height: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-size: clamp(17px, 18px, 18px);
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

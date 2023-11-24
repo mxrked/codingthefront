@@ -289,24 +289,28 @@
           li {
             margin-bottom: 20px;
 
-            span {
-              color: $BlueZodiac;
-              cursor: pointer;
-              position: relative;
+            a {
+              text-decoration: none;
 
               span {
-                width: 0;
-                height: 4px;
-                background-color: $BlueZodiac;
-                display: block;
-                position: absolute;
-                bottom: -3px;
-                left: 0;
-              }
+                color: $BlueZodiac;
+                cursor: pointer;
+                position: relative;
 
-              &:hover {
                 span {
-                  width: 100%;
+                  width: 0;
+                  height: 4px;
+                  background-color: $BlueZodiac;
+                  display: block;
+                  position: absolute;
+                  bottom: -3px;
+                  left: 0;
+                }
+
+                &:hover {
+                  span {
+                    width: 100%;
+                  }
                 }
               }
             }

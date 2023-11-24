@@ -247,12 +247,15 @@
 .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_main ul li {
   margin-bottom: 20px;
 }
-.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_main ul li span {
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_main ul li a {
+  text-decoration: none;
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_main ul li a span {
   color: #0f3051;
   cursor: pointer;
   position: relative;
 }
-.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_main ul li span span {
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_main ul li a span span {
   width: 0;
   height: 4px;
   background-color: #0f3051;
@@ -261,7 +264,7 @@
   bottom: -3px;
   left: 0;
 }
-.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_main ul li span:hover span {
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_main ul li a span:hover span {
   width: 100%;
 }
 .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_main ul .mobile_nav_menu_projects_li span span {
