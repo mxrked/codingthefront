@@ -267,6 +267,34 @@
     margin-top: 60px;
     margin-bottom: 60px;
   }
+  .index_about .index_about_inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_inner_side {
+    height: 570px;
+  }
+  .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_L .index_about_inner_side_cnt .img_holder {
+    max-height: 430px;
+    max-width: 500px;
+  }
+  .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_L .index_about_inner_side_cnt .img_holder .icon_holder {
+    font-size: 55px;
+  }
+  .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_R .index_about_inner_side_cnt {
+    max-width: 90%;
+  }
+  .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_R .index_about_inner_side_cnt h2 {
+    font-size: 45px;
+  }
+  .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_R .index_about_inner_side_cnt p {
+    max-width: 870px;
+    font-size: 21px;
+  }
+  .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_R .index_about_inner_side_cnt div {
+    height: 50px;
+    font-size: 18px;
+  }
 }
 @media all and (max-width: 991px) {
   .index_top .index_top_main {

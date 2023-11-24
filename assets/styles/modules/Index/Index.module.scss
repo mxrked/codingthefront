@@ -327,6 +327,52 @@
   .index_about {
     margin-top: 60px;
     margin-bottom: 60px;
+
+    .index_about_inner {
+      padding-left: 30px;
+      padding-right: 30px;
+
+      .index_about_inner_box {
+        .index_about_inner_row {
+          .index_about_inner_side {
+            height: 570px;
+          }
+
+          .index_about_L {
+            .index_about_inner_side_cnt {
+              .img_holder {
+                max-height: 430px;
+                max-width: 500px;
+
+                .icon_holder {
+                  font-size: clamp(50px, 55px, 55px);
+                }
+              }
+            }
+          }
+
+          .index_about_R {
+            .index_about_inner_side_cnt {
+              max-width: 90%;
+
+              h2 {
+                font-size: clamp(40px, 45px, 45px);
+              }
+
+              p {
+                max-width: 870px;
+                font-size: clamp(18px, 21px, 21px);
+              }
+
+              div {
+                height: 50px;
+                font-size: clamp(17px, 18px, 18px);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
