@@ -6,8 +6,12 @@
 
 import { CDNVideoReturn } from "./CDNReturns";
 
-const TOP_VIDEO = CDNVideoReturn("index", "top-video-compressed", "mp4");
-const TOP_VIDEO_POSTER = CDNVideoReturn("index", "top-video-poster", "webp");
+const TOP_VIDEO = CDNVideoReturn("index", "new-video-compressed", "mp4");
+const TOP_VIDEO_POSTER = CDNVideoReturn(
+  "index",
+  "new-video-compressed",
+  "webp"
+);
 
 export { TOP_VIDEO };
 export { TOP_VIDEO_POSTER };
